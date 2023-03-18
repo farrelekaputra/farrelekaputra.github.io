@@ -301,6 +301,7 @@ footer li img{
     justify-content: space-around;
     transition: .3s;
     z-index: 999;
+        align-items: center;
     }
     nav .logo{
         font-size: 1rem;
