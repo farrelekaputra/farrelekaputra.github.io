@@ -167,6 +167,7 @@ label{
     justify-content: space-between;
 }
 .figma{
+    cursor: pointer;
     transition: .3s;
 }
 .figma:hover{
@@ -174,6 +175,7 @@ label{
     transition: .3s;
 }
 .corel{
+    cursor: pointer;
     transition: .3s;
 }
 .corel:hover{
@@ -181,6 +183,7 @@ label{
     transition: .3s;
 }
 .html{
+    cursor: pointer;
     transition: .3s;
 }
 .html:hover{
@@ -188,6 +191,7 @@ label{
     transition: .3s;
 }
 .css{
+    cursor: pointer;
     transition: .3s;
 }
 .css:hover{
@@ -240,6 +244,7 @@ label{
     transition: .3s;
     border: 1px solid rgba(52, 53, 71, 0.685);
     transition: .3s;
+    cursor: pointer;
 }
 .container3 ul li:hover{
     border: 2px solid rgb(2, 127, 255);
