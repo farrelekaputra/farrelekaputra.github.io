@@ -167,36 +167,36 @@ label{
     justify-content: space-between;
 }
 .figma{
-    cursor: pointer;
     transition: .3s;
 }
 .figma:hover{
-    border: 3px solid rgb(2, 127, 255);
+    border: 3px solid rgb(36,72,248);
     transition: .3s;
+    border-radius: 20px;
 }
 .corel{
-    cursor: pointer;
     transition: .3s;
 }
 .corel:hover{
-    border: 3px solid rgb(2, 127, 255);
+   border: 3px solid rgb(36,72,248);
     transition: .3s;
+    border-radius: 20px;
 }
 .html{
-    cursor: pointer;
     transition: .3s;
 }
 .html:hover{
-    border: 3px solid rgb(2, 127, 255);
+    border: 3px solid rgb(36,72,248);
     transition: .3s;
+    border-radius: 20px;
 }
 .css{
-    cursor: pointer;
     transition: .3s;
 }
 .css:hover{
-    border: 3px solid rgb(2, 127, 255);
+    border: 3px solid rgb(36,72,248);
     transition: .3s;
+    border-radius: 20px;
 }
 .page3{
     width: auto;
@@ -247,7 +247,9 @@ label{
     cursor: pointer;
 }
 .container3 ul li:hover{
-    border: 2px solid rgb(2, 127, 255);
+    border: 2px solid rgb(36,72,248);
+     transition: .3s;
+    border-radius: 20px;
 }
 .container3 .deskripsi{
     width: 90%;
