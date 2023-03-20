@@ -166,6 +166,34 @@ label{
     display: flex;
     justify-content: space-between;
 }
+.figma{
+    transition: .3s;
+}
+.figma:hover{
+    border: 3px solid rgb(2, 127, 255);
+    transition: .3s;
+}
+.corel{
+    transition: .3s;
+}
+.corel:hover{
+    border: 3px solid rgb(2, 127, 255);
+    transition: .3s;
+}
+.html{
+    transition: .3s;
+}
+.html:hover{
+    border: 3px solid rgb(2, 127, 255);
+    transition: .3s;
+}
+.css{
+    transition: .3s;
+}
+.css:hover{
+    border: 3px solid rgb(2, 127, 255);
+    transition: .3s;
+}
 .page3{
     width: auto;
     height: 100vh;
@@ -211,6 +239,10 @@ label{
     border-radius: 10px;
     transition: .3s;
     border: 1px solid rgba(52, 53, 71, 0.685);
+    transition: .3s;
+}
+.container3 ul li:hover{
+    border: 2px solid rgb(2, 127, 255);
 }
 .container3 .deskripsi{
     width: 90%;
