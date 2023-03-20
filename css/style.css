@@ -139,9 +139,12 @@ label{
     color: rgba(17, 25, 56);
     }
 .container2{
+    background-image: url(gambar/skill/background.png);
+    background-size: 100%;
     margin: auto;
     width: 90%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     margin: auto;
     background-color: white;
@@ -150,12 +153,18 @@ label{
     height: 50%;
     font-size: 1.5rem;
 }
-.container2 div{
-    height: 50%;
-    width: 20%;
-    border: 1px solid black;
-    padding: 2%;
-    border-radius: 5px;
+.containeratas{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.containerbawah{
+    margin-top: -60px;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
 }
 .page3{
     width: auto;
@@ -601,131 +610,38 @@ footer li img{
     font-size: 1rem;
 }
 .page2{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(239,241,253);
-}
-.h1{
-    padding-top: 7%;
-    margin: 20px;
-    font-size: 3.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    color: rgba(17, 25, 56);
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 1px solid rgba(17, 25, 56);
     }
-.container2{
-    margin: auto;
-    width: 80%;
-    margin: auto;
-    background-color: white;
-    padding: 2%;
-    box-shadow: 0 0 4px rgba(2, 129, 255);
-    border-radius: 10px;
-}
-.gallery li{
-    margin: auto;
-    margin-bottom: 3%;
-    margin-left: 3%;
-    align-items: center;
-    justify-content: center;
-    float: left;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    /*overflow: hidden;*/
-    border: 5px solid rgb(0, 79, 158);
-    margin-right: 0.3%;
-    position: relative;
-}
-.gallery li a img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
-.gallery li span{
-    text-align: center;
-    color: rgba(17, 25, 56);
-    font-weight: bolder;
-    border-radius: 50%;
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-color: rgba(2, 129, 255, 0.384);
-    position: absolute;
-    top: 0;
-    line-height: 100px;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 3px rgba(36, 36, 36, 0.452);
-    opacity: 0;
-    transition: 0.2s;
-}
-.gallery li a:hover span{
-    opacity: 1;
-}
-.clear{
-    clear: both;
-}
-.overlay{
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 99999;
-    transition: 0.5s;
-    text-align: center;
-    padding:5.2%;
-}
-.overlay:target{
-    width: auto;
-    height: auto;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0,0.8);
-}
-.overlay .close{
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    margin-left: -20px;
-    text-decoration: none;
-    font-weight: bolder;
-    color: white;
-    opacity: 0;
-}
-.overlay img{
-    max-height: 100%;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.616);
-}
-
-.overlay:target img{
-    animation: zoom .5s;
-}
-.overlay:target .close{
-    animation: button .5s .5s forwards;
-}
-@keyframes zoom{
-    0%{
-        transform: scale(0);
-        opacity: 0;
+    .page2 .h1{
+        font-size: 2.5rem;
     }
-    100%{
-        transform: scale(1);
-        opacity: 1;;
+    .pembuka{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        font-weight: 600;
+        text-align: left;
+        justify-content: start;
     }
-}
-@keyframes button{
-    0%{
-        opacity: 0;
+    .halo{
+        font-size: 3rem;
     }
-    100%{
-        opacity: 1;
+    .container2{
+        background-image: url(gambar/skill/background2.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
-}
+    .containeratas img{
+        height: 100px;
+        width: 80px;
+    }
+    .containerbawah img{
+        height: 100px;
+        width: 80px;
+    }
 .Page3{
     width:100%;
     height: auto;
