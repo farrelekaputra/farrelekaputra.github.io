@@ -243,13 +243,13 @@ label{
     border-radius: 10px;
     transition: .3s;
     border: 1px solid rgba(52, 53, 71, 0.685);
-    transition: .3s;
+    transition: .7s;
     cursor: pointer;
 }
 .container3 ul li:hover{
     border: 2px solid rgb(36,72,248);
-     transition: .3s;
-    border-radius: 20px;
+     transition: .7s;
+    border-radius: 10px;
 }
 .container3 .deskripsi{
     width: 90%;
@@ -293,10 +293,11 @@ button:hover{
     background-color: rgb(239,241,253);
     color: rgb(36,72,248);
     border: 2px solid rgb(36,72,248);
-    transition: 1s;
+    transition: .3s;
 }
 button:hover a{
     color: rgb(36,72,248);
+    transition: .3s;
 }
 button a{
     text-decoration: none;
