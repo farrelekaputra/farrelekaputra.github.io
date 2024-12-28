@@ -4,9 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Call me Farrel</title>
+    <title>a Man Called Rel</title>
 </head>
+<style>
+    html{
+        background-color: rgb(239,241,253);;
+    }
+    @media (min-width: 0px) and (max-width: 576px) {
+    .container{
+        padding-top: 25%;
+        padding-bottom: 40%;
+        width: 90% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        /* margin: auto !important;
+        align-content: center !important;
+        align-items: center !important;
+        row-gap: -20% !important; */
+    }
+    .container .profilPics{
+        width: 120% !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding-top: 20% !important;
+    }
+    .aboutMe{
+        width: 80% !important;
+        text-align: justify;
+    }
+    }
+</style>
 <body>
+
+    <section class="navbar">
+        <nav class="bg-white flex justify-center z-[99999] fixed top-0 left-0 w-full">
+            <div class="content-center bg-white w-full flex flex-wrap items-center justify-between mx-auto p-4 px-10">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-2xl font-bold whitespace-nowrap text-gray-900">Farrel Ekaputra</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                        <li><a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a></li>
+                        <li><a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">What I do</a></li>
+                        <li><a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-900 md:dark:hover:bg-transparent">Portofolio</a></li>
+                        <li><a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-900 md:dark:hover:bg-transparent">Contact me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
+    </section>
     
+    <section>
+        <div class="container w-11/12 flex mx-auto h-screen justify-between items-center">
+            <div class="profilPics flex items-center w-1/2">
+                <img src="gambar/me.png" class="pics rounded-full w-1/2 transition-all duration-200 transform hover:scale-110 hover:origin-left cursor-pointer" alt="">
+            </div>
+            <div class="aboutMe flex w-1/2 flex-col">
+                <h1 class="name text-blue-600 text-left text-3xl font-bold pb-3">Hi, im Farrel</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta architecto enim consequatur itaque incidunt. Harum quas natus reprehenderit hic, unde enim dolore fugit repudiandae molestias odit, architecto molestiae libero ea?
+                </p>
+            </div>
+        </div>
+        <div class="wave sticky bottom-0 left-0 z-[999] w-full h-[150px] transform scale-y-[60%] origin-bottom overflow-y-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2563EB" fill-opacity="1" d="M0,64L0,192L36.9,192L36.9,160L73.8,160L73.8,224L110.8,224L110.8,64L147.7,64L147.7,192L184.6,192L184.6,32L221.5,32L221.5,64L258.5,64L258.5,224L295.4,224L295.4,160L332.3,160L332.3,96L369.2,96L369.2,128L406.2,128L406.2,64L443.1,64L443.1,224L480,224L480,256L516.9,256L516.9,224L553.8,224L553.8,64L590.8,64L590.8,160L627.7,160L627.7,256L664.6,256L664.6,32L701.5,32L701.5,96L738.5,96L738.5,64L775.4,64L775.4,288L812.3,288L812.3,32L849.2,32L849.2,160L886.2,160L886.2,224L923.1,224L923.1,32L960,32L960,96L996.9,96L996.9,128L1033.8,128L1033.8,96L1070.8,96L1070.8,192L1107.7,192L1107.7,32L1144.6,32L1144.6,32L1181.5,32L1181.5,256L1218.5,256L1218.5,160L1255.4,160L1255.4,224L1292.3,224L1292.3,160L1329.2,160L1329.2,64L1366.2,64L1366.2,256L1403.1,256L1403.1,192L1440,192L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"></path></svg>
+        </div>        
+    </section>    
+
+    <section>
+        <div class="container2 w-full bg-blue-600 flex mx-auto h-screen justify-between items-center" style="margin-top: -2px;">
+            <div class="content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cupiditate consequatur tempore sequi? Asperiores voluptatem eum, nam itaque consequatur officia eius. Vero explicabo quo maxime consequuntur nemo nostrum reiciendis sequi!
+            </div>
+        </div>        
+    </section>
 </body>
 </html>
