@@ -7,9 +7,13 @@
     <title>a Man Called Rel</title>
 </head>
 <style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
     html{
         background-color: rgb(239,241,253);
         overflow-x: hidden !important;
+        scroll-behavior: smooth;
     }
     @media (min-width: 0px) and (max-width: 576px) {
     .container{
@@ -70,10 +74,10 @@
                 <div id="dropdown-menu" class="hidden w-full md:block md:w-auto transition-all ease-in-out duration-300">
                     <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">Home</a>
+                            <a href="#page1" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">Home</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">What I do</a>
+                            <a href="#page2" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">What I do</a>
                         </li>
                         <li>
                             <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Portofolio</a>
@@ -88,15 +92,15 @@
     </section>
     
     <!-- page 1 -->
-    <section>
-        <div class="container w-11/12 flex mx-auto h-screen justify-between items-center">
+    <section class="page1">
+        <div class="container w-10/12 flex mx-auto h-screen justify-between items-center" id="page1">
             <div class="profilPics flex items-center w-1/2">
                 <img src="gambar/me.png" class="pics rounded-full w-1/2 transition-all duration-200 transform hover:scale-110 hover:origin-left cursor-pointer" alt="">
             </div>
             <div class="aboutMe flex w-1/2 flex-col">
-                <h1 class="name text-blue-600 text-left text-3xl font-bold pb-3">Hi, im Farrel</h1>
+                <h1 class="name text-blue-600 text-left text-4xl font-bold pb-3">Hi, im Farrel</h1>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta architecto enim consequatur itaque incidunt. Harum quas natus reprehenderit hic, unde enim dolore fugit repudiandae molestias odit, architecto molestiae libero ea?
+                    Oke, aku seorang mahasiswa di program studi yang berbau informatika, yang juga mendalami vector ilustration, ui ux design, dan baru terjun ke dunia front end web developer. Selamat datang di website portofolio ku, hope you enjoy guys~
                 </p>
             </div>
         </div>
@@ -106,47 +110,97 @@
     </section>    
 
     <!-- Page 2 -->
-    <section>
-        <div class="container2 pt-2 w-full bg-blue-600 flex mx-auto h-screen justify-center items-center" style="margin-top: -2px;">
-            <div class="content2 flex mx-auto w-11/12 flex-col">
-                <h1 class="name text-white text-left text-3xl font-bold pb-3">
+    <section class="page2">
+        <div class="container2 pt-2 w-full bg-blue-600 flex flex-col mx-auto h-auto justify-center items-center" id="page2" style="margin-top: -2px;">
+            <div class="content2 flex mx-auto w-10/12 flex-col">
+                <h1 class="name text-white text-left text-4xl font-bold pb-3">
                     What do i do?
                 </h1>
                 <p class="text text-white text-justify">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta architecto enim consequatur itaque incidunt. Harum quas natus reprehenderit hic, unde enim dolore fugit repudiandae molestias odit, architecto molestiae libero ea?
+                    Sebenarnya ada banyak kegiatan yang biasa ku lakuin waktu senggang, tapi karena ukuran halaman yang seadanya dan nanti page lain ga kebagian, jadi ditaruh top 3 kegiatan yang sering dilakuin sehari-hari.
                 </p>
                 <div class="activity flex flex-row justify-around pt-10">
-                    <div class="card flex flex-col rounded-lg p-3 justify-center w-56 h-auto bg-white">
+                    <div class="card flex flex-col rounded-lg p-5 justify-center w-80 h-auto bg-white">
                         <img src="gambar\landscape\programming.png" alt="" class="page2">
                         <h1 class="name text-gray-800 text-left text-xl font-bold pt-3">
                             Programming
                         </h1>
                         <p class="caption2 text-justify">
-                            Teks ini akan diisi ooleh hobi dan kegiatan saya untuk mengisi waktu luang
+                            Berhubung di jurusan yang mengandung informatika, jadi ya gara-gara tugas atau gabut juga sering bikin program atau web (kadang).
                         </p>
                     </div>
-                    <div class="card flex flex-col rounded-lg p-3 justify-center w-56 h-auto bg-white">
+                    <div class="card flex flex-col rounded-lg p-5 justify-center w-80 h-auto bg-white">
                         <img src="gambar\landscape\room.png" alt="" class="page2">
                         <h1 class="name text-gray-800 text-left text-xl font-bold pt-3">
                             Design
                         </h1>
                         <p class="caption2 text-justify">
-                            Teks ini akan diisi ooleh hobi dan kegiatan saya untuk mengisi waktu luang
+                            FYI, pernah juga join organisasi dan jobdesk disini ga jauh-jauh sama desain. Selain hobi juga jadi mau ga mau harus ngerjain jobdesk.
                         </p>
                     </div>
-                    <div class="card flex flex-col rounded-lg p-3 justify-center w-56 h-auto bg-white">
+                    <div class="card flex flex-col rounded-lg p-5 justify-center w-80 h-auto bg-white">
                         <img src="gambar\landscape\new.png" alt="" class="page2">
                         <h1 class="name text-gray-800 text-left text-xl font-bold pt-3">
                             Nongkrong
                         </h1>
                         <p class="caption2 text-justify">
-                            Teks ini akan diisi ooleh hobi dan kegiatan saya untuk mengisi waktu luang
+                            Namanya juga orang, kadang pasti juga ngerasa gabut. Sesekali oke lah, nongkrong ngapain? ya ngegame hehe.
                         </p>
                     </div>
                 </div>
             </div>
-        </div>        
+            <div class="wave sticky bottom-0 left-0 z-[40] w-screen h-auto transform scale-y-[60%] origin-bottom overflow-y-hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L65.5,128L130.9,288L196.4,0L261.8,256L327.3,32L392.7,160L458.2,128L523.6,192L589.1,64L654.5,96L720,128L785.5,128L850.9,192L916.4,224L981.8,32L1047.3,128L1112.7,128L1178.2,224L1243.6,160L1309.1,192L1374.5,32L1440,128L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+            </div>
+        </div>
     </section>
+
+    <!-- Page 3 -->
+    <section class="page3">
+        <div class="container2 pt-2 w-full bg-white flex flex-col mx-auto h-auto justify-center items-center" id="page2" style="margin-top: -2px;">
+            <div class="content2 flex mx-auto w-10/12 flex-col">
+                <h1 class="name text-blue-700 text-left text-4xl font-bold pb-3">
+                    Portofolio
+                </h1>
+                <p class="text text-gray-800 text-justify">
+                    Berikut merupakan beberapa project yang dilakukan dalam tim ataupun individu dalam beberapa waktu kebelakang.
+                </p>
+                <div class="activity flex flex-row justify-around pt-10">
+                    <div class="card flex flex-col rounded-lg p-3 justify-center w-80 h-auto bg-white">
+                        <img src="gambar\landscape\programming.png" alt="" class="page2">
+                        <h1 class="name text-gray-800 text-left text-xl font-bold pt-3">
+                            Programming
+                        </h1>
+                        <p class="caption2 text-justify">
+                            Berhubung di jurusan yang mengandung informatika, jadi ya gara-gara tugas atau gabut juga sering bikin program atau web (kadang).
+                        </p>
+                    </div>
+                    <div class="card flex flex-col rounded-lg p-3 justify-center w-80 h-auto bg-white">
+                        <img src="gambar\landscape\room.png" alt="" class="page2">
+                        <h1 class="name text-gray-800 text-left text-xl font-bold pt-3">
+                            Design
+                        </h1>
+                        <p class="caption2 text-justify">
+                            FYI, pernah juga join organisasi dan jobdesk disini ga jauh-jauh sama desain. Selain hobi juga jadi mau ga mau harus ngerjain jobdesk.
+                        </p>
+                    </div>
+                    <div class="card flex flex-col rounded-lg p-3 justify-center w-80 h-auto bg-white">
+                        <img src="gambar\landscape\new.png" alt="" class="page2">
+                        <h1 class="name text-gray-800 text-left text-xl font-bold pt-3">
+                            Nongkrong
+                        </h1>
+                        <p class="caption2 text-justify">
+                            Namanya juga orang, kadang pasti juga ngerasa gabut. Sesekali oke lah, nongkrong ngapain? ya ngegame hehe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="wave sticky bottom-0 left-0 z-[40] w-screen h-auto transform scale-y-[60%] origin-bottom overflow-y-hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L65.5,128L130.9,288L196.4,0L261.8,256L327.3,32L392.7,160L458.2,128L523.6,192L589.1,64L654.5,96L720,128L785.5,128L850.9,192L916.4,224L981.8,32L1047.3,128L1112.7,128L1178.2,224L1243.6,160L1309.1,192L1374.5,32L1440,128L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+            </div>
+        </div>
+    </section>
+
 </body>
 <script>
 const menuToggle = document.getElementById('menu-toggle');
