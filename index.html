@@ -2,109 +2,432 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Farrel Ekaputra</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="gambar/icon website.svg">
 </head>
-<body>
-    <nav>
-        <input type="checkbox" name="" id="nav-button">
-        <label for="nav-button">&#9776</label>
-        <div class="logo">M Farrel Ekaputra</div>
-        <ul>
-            <li><a href="#halaman1">Home</a></li>
-            <li><a href="#halaman3">What I do</a></li>
-            <li><a href="#halaman4">Contact Me</a></li>
+<style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    html{
+        background-color: rgb(239,241,253);
+        overflow-x: hidden !important;
+        scroll-behavior: smooth;
+    }
+    .sosmed .icon-white svg {
+    fill: white;
+}
+
+    @media (min-width: 0px) and (max-width: 576px) {
+    .container{
+        padding-top: 25%;
+        padding-bottom: 40%;
+        width: 90% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        /* margin: auto !important;
+        align-content: center !important;
+        align-items: center !important;
+        row-gap: -20% !important; */
+    }
+    .container .profilPics{
+        width: 80% !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .aboutMe{
+        width: 80% !important;
+        text-align: justify;
+        padding-top: 3rem !important;
+    }
+    h1{
+        font-size: 2rem !important;
+    }
+    p{
+        font-size: 1.2rem !important;
+    }
+    .sosmed{
+        scale: 0.8 !important;
+        left: 8px !important;
+        bottom : 8px !important;
+    }
+    .container2{
+        padding-top: 6% !important;
+        height: auto !important;
+        justify-content: center;
+    }
+    .content2{
+        width: 80% !important;
+    }
+    .activity{
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 6%;
+        width: 18rem !important;
+    }
+    }
+</style>
+<body class="body overflow-x-hidden">
+    <!-- Sosmed logo -->
+    <div class="sosmed fixed bottom-4 left-4 z-40" id="socialMediaContainer">
+        <ul class="sosmedIcon flex flex-col gap-3">
+            <li class="discord"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg></li>
+            <li class="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+              </svg></li>
+            <li class="linkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg></li>
         </ul>
-    </nav>
-    <div class="container">
-    <div id="halaman1" class="page1">
-        <div class="page1-kiri">
-        <div class="pembuka" data-aos="fade-up" data-aos-duration="1000">
-            <div class="perkenalan"> <div class="im"> Hi! im,  </div><div class="nama">Farrel</div></div>
-            <div class="skill">Saya seorang mahasiswa di prodi yang berbau informatika, saya juga mendalami vector ilustration, ui ux design, dan baru terjun ke dunia front end web developer.</div>
-        </div>
-    </div>
-    <div class="page1-kanan rounded-circle" data-aos="fade-left" data-aos-duration="1000">
-        <img src="https://thumbs.dreamstime.com/b/close-up-funny-smiling-cat-portrait-isolated-happy-closed-eyes-white-png-transparent-background-303208091.jpg" alt="" class="foto">
-    </div>
-    </div>
-    </div>
-    <div class="page2 d-flex mx-auto flex-column justify-content-evenly">
-        <div class="h1" data-aos="fade-up" data-aos-duration="1000">That I Usually Use</div>
-        <div class="container2 d-flex mx-auto flex-wrap column-gap-3 row-gap-3" >
-                <img src="gambar/skill/figma.png" alt="" class="figma" style="width: 130px;" height="130px" data-aos="fade-right" data-aos-duration="1000">
-                <img src="gambar/skill/corel.png" alt="" class="corel" style="width: 130px;" height="130px" data-aos="fade-leftt" data-aos-duration="1000">
-                <img src="gambar/skill/html.png" alt="" class="html" style="width: 130px;" height="130px" data-aos="fade-up" data-aos-duration="1000">
-                <img src="gambar/skill/css.png" alt="" class="css" style="width: 130px;" height="130px" data-aos="fade-up" data-aos-duration="1000">
-        </div>
-        </div>
-    </div>
-    <div id="halaman3" class="Page3" >
-        <div class="h1" data-aos="fade-up" data-aos-duration="1000">what do I do</div>
-        <div class="container3">
-            <ul>
-                <li data-aos="fade-right" data-aos-duration="1000" style="height: 20rem;">Vector ilustration <br>
-                    <img src="gambar/potrait/room.png" alt="">
-                    <!-- <div class="deskripsi">Sekarang lagi vakum.</div> -->
-                    <!-- <div class="deskripsi">Menggambar seperti mendesain vector adalah salah satu hobi yang dari cukup lama saya minati, dan baru sejak smk saya benar-benar menekuni hobi tersebut walaupun jurusan SMK bukan multimedia apalagi animasi.</div> -->
-                </li>
-                <li data-aos="fade-left" data-aos-duration="1000" style="height: 20rem;">Basic Programming<br>
-                    <img src="gambar/programming.jpg" alt="">
-                    <!-- <div class="deskripsi">Biar gak gabut.</div> -->
-                    <!-- <div class="deskripsi">Mengingat saya juga kuliah di salah satu bidang informatika, saya juga diharuskan untuk mempelajari logika pemrograman seperti bahasa c++, tetapi saya pribadi lebih berminat kearah front end web developer yang berhubungan dengan grafis.</div> -->
-                </li>
-                    <li data-aos="fade-right" data-aos-duration="1000" style="height: 20rem;">Learning New Thing <br>
-                    <img src="gambar/landscape/new.png" alt="">
-                    <!-- <div class="deskripsi">Intinya ngoding.</div> -->
-                    <!-- <div class="deskripsi">Di era digital seperti sekarang, memang kita tidak bisa hanya bisa mengandalkan materi dari dosen, ada lebih banyak sumber belajar diluar sana yangg menunggu untuk kita pelajari.</div> -->
-            </ul>
-        </div>
-    </div>
-    <div class="halporto">
-        <div class="page7">
-            <div class="h1" data-aos="fade-up" data-aos-duration="1000">Portofolio Website</div>
-            <div class="container7">
-                <div class="skill2" style="margin: auto;" data-aos="fade-up" data-aos-duration="1000">ini adalah beberapa project website baik yang saya kerjakan pribadi ataupun dalam tim</div>
-                <div class="containeratas1 column-gap-3">
-                    <div class="jtravel" data-aos="fade-right" data-aos-duration="1000"><a href="https://farrelekaputra.github.io/jtravel.github.io/" target="_blank"><div class="t1">Website Travel</div><img src="gambar/jtravel/1.png" alt=""></a></div>
-                    <div class="smart" data-aos="fade-left" data-aos-duration="1000"><div class="t1">SmartHome</div><img src="gambar/smarthome/2.png" alt=""></div>
-                </div>
-                <div class="containerbawah1">
-                    <div class="kopi" data-aos="fade-up" data-aos-duration="1000"><div class="t1">web kopi</div><img src="gambar/web kopi/Screenshot (1288).png" alt=""></div>
-                </div>
-            </div>
-        </div>
     </div>
 
-    <div id="halaman4" class="page4" >
-        <div class="h1" data-aos="fade-up" data-aos-duration="1000">Hubungi Saya</div>
-        <div class="container4" data-aos="fade-right" data-aos-duration="1000">
-            <div class="skill">
-                Jika anda ingin mengenal atau mengobrol dengan saya labih lanjut bisa klik tautan dibawah
+    <!-- navbar -->
+    <section class="navbar">
+        <nav class="bg-white flex justify-center z-50 w-full fixed top-0 p-4">
+            <div class="content-center bg-white w-full flex flex-wrap items-center justify-between mx-auto p-2 px-10 sticky top-0">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-2xl font-bold whitespace-nowrap text-gray-900">M. Farrel Ekaputra</span>
+                </a>
+                <!-- Button for toggling menu -->
+                <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <!-- Dropdown Menu -->
+                <div id="dropdown-menu" class="hidden w-full md:block md:w-auto transition-all ease-in-out duration-300">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                        <li>
+                            <a href="#page1" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">Home</a>
+                        </li>
+                        <li>
+                            <a href="#page2" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">What I do</a>
+                        </li>
+                        <li>
+                            <a href="#page3" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Portofolio</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <button data-aos="fade-down" data-aos-duration="1000"><a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=farrelekaputra1@gmail.com" target="_blank">Hubungi saya</a></button>
+        </nav>
+    </section>
+    
+    <!-- page 1 -->
+    <section class="page1">
+        <div class="container w-10/12 flex mx-auto h-auto md:h-screen justify-between items-center" id="page1">
+            <div class="profilPics flex items-center w-1/2">
+                <img src="gambar/updateMe.png" class="pics border-8 rounded-full  border-blue-700 w-80 transition-all duration-200 transform hover:scale-110 hover:origin-left cursor-pointer" alt="">
+            </div>
+            <div class="aboutMe flex w-1/2 flex-col gap-2">
+                <h1 class="name text-blue-600 text-left text-5xl font-bold pb-3">Hi, im Farrel</h1>
+                <div class="mySkill flex w-full justify-start gap-8 flex-wrap">
+                    <div class="html flex gap-2">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
+                                <path fill="#2563EB" d="m3 2l1.578 17.824L12 22l7.467-2.175L21 2zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565l-4.246 1.381l-4.281-1.455l-.288-2.932h2.024l.16 1.411l2.4.815l2.346-.763l.297-3.005H7.416l-.562-6.05h10.412z" />
+                            </svg>
+                        </div>
+                        <div class="caption text-xl font-semibold">
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="tailwind flex gap-2">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
+                                <path fill="#2563EB" d="M12 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.31.74 1.91 1.35c.98 1 2.09 2.15 4.59 2.15c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C15.61 7.15 14.5 6 12 6m-5 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.3.74 1.91 1.35C8.39 16.85 9.5 18 12 18c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C10.61 13.15 9.5 12 7 12" />
+                            </svg>
+                        </div>
+                        <div class="caption text-xl font-semibold">
+                            Tailwind
+                        </div>
+                    </div>
+                    <div class="figma flex gap-2">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
+                                <path fill="#2563EB" fill-rule="evenodd" d="M8.667 9.417a2.583 2.583 0 1 0 0 5.166h2.583V9.417zm2.583-1.5H8.667a2.583 2.583 0 0 1 0-5.167h2.583zm1.5-5.167v5.167h2.583a2.584 2.584 0 0 0 0-5.167zm2.583 6.666a2.583 2.583 0 0 0-2.583 2.542v.083a2.583 2.583 0 1 0 2.583-2.625m-6.666 6.667a2.584 2.584 0 1 0 2.583 2.584v-2.584z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="caption text-xl font-semibold">
+                            Ui Design
+                        </div>
+                    </div>
+                    <div class="design flex gap-2">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 14 14">
+                                <path fill="#2563EB" fill-rule="evenodd" d="M8.308.922L6.75 3q.07.053.134.116l4 4q.063.063.116.134l2.078-1.558a1 1 0 0 0 .107-1.507L9.815.815a1 1 0 0 0-1.507.107M1.381 5.254L.166 12.95L3.116 10l-.308-.308a.625.625 0 0 1 .884-.884l1.5 1.5a.625.625 0 0 1-.884.884L4 10.884l-2.95 2.95l7.696-1.215a1 1 0 0 0 .838-.877L10 8L6 4l-3.742.416a1 1 0 0 0-.877.838" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="caption text-xl font-semibold">Illustration</div>
+                    </div>
+                </div>
+                <p class="text text-xl">
+                    Oke, aku seorang mahasiswa di program studi yang berbau informatika, yang juga mendalami vector ilustration, ui ux design, dan baru terjun ke dunia front end web developer. Selamat datang di website portofolio ku, hope you enjoy guys~
+                </p>
+            </div>
         </div>
-        <!-- <img src="gambar/orang.png" alt="" class="orang"> -->
-    </div>
-    <footer>
-        <ul>
-            <li><a href="https://discord.com/users/rel#4244" target="_blank"><img src="gambar/discord.png" alt="discord" style="width: 30px;"></a></li>
-            <li><a href="https://www.linkedin.com/m/in/farrel-ekaputra-213bb3235" target="_blank"><img src="gambar/linkedin.png" alt="linkedin" style="width: 30px;"></a></li>
-            <li><a href="https://www.instagram.com/_.lazzyboy/" target="_blank"><img src="gambar/instagram.png" alt="instagram" style="width: 30px;"></a></li>
-        </ul>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+        <div class="wave sticky bottom-0 left-0 z-40 w-full h-auto transform scale-y-[60%] origin-bottom overflow-y-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2563EB" fill-opacity="1" d="M0,64L0,192L36.9,192L36.9,160L73.8,160L73.8,224L110.8,224L110.8,64L147.7,64L147.7,192L184.6,192L184.6,32L221.5,32L221.5,64L258.5,64L258.5,224L295.4,224L295.4,160L332.3,160L332.3,96L369.2,96L369.2,128L406.2,128L406.2,64L443.1,64L443.1,224L480,224L480,256L516.9,256L516.9,224L553.8,224L553.8,64L590.8,64L590.8,160L627.7,160L627.7,256L664.6,256L664.6,32L701.5,32L701.5,96L738.5,96L738.5,64L775.4,64L775.4,288L812.3,288L812.3,32L849.2,32L849.2,160L886.2,160L886.2,224L923.1,224L923.1,32L960,32L960,96L996.9,96L996.9,128L1033.8,128L1033.8,96L1070.8,96L1070.8,192L1107.7,192L1107.7,32L1144.6,32L1144.6,32L1181.5,32L1181.5,256L1218.5,256L1218.5,160L1255.4,160L1255.4,224L1292.3,224L1292.3,160L1329.2,160L1329.2,64L1366.2,64L1366.2,256L1403.1,256L1403.1,192L1440,192L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"></path></svg>
+        </div>
+    </section>    
+
+    <!-- Page 2 -->
+    <section class="page2" id="page2">
+        <div class="container2 pt-2 w-full bg-blue-600 flex flex-col mx-auto h-auto justify-center items-center" id="page2" style="margin-top: -2px;">
+            <div class="content2 flex mx-auto w-10/12 flex-col">
+                <h1 class="name text-white text-left text-5xl font-bold pb-3">
+                    What do i do?
+                </h1>
+                <p class="text text-white text-justify text-xl">
+                    Sebenarnya ada banyak kegiatan yang biasa ku lakuin waktu senggang, tapi karena ukuran halaman yang seadanya dan nanti page lain ga kebagian, jadi ditaruh top 3 kegiatan yang sering dilakuin sehari-hari.
+                </p>
+                <div class="activity flex flex-row justify-center gap-10 pt-10">
+                    <div class="card flex flex-col rounded-lg p-5 justify-center w-80 gap-4 h-auto bg-white">
+                        <img src="gambar\landscape\programming.png" alt="" class="page2 transition-transform duration-200 transform hover:scale-110 cursor-pointer">
+                        <h1 class="name text-gray-800 text-left text-2xl font-bold">
+                            Programming
+                        </h1>
+                        <p class="caption text-xl font-semibold2 text-justify">
+                            Berhubung di jurusan yang mengandung informatika, jadi ya gara-gara tugas atau gabut juga sering bikin program atau web (kadang).
+                        </p>
+                    </div>
+                    <div class="card flex flex-col rounded-lg p-5 justify-center w-80 gap-4 h-auto bg-white">
+                        <img src="gambar\landscape\room.png" alt="" class="page2 transition-transform duration-200 transform hover:scale-110 cursor-pointer">
+                        <h1 class="name text-gray-800 text-left text-2xl font-bold">
+                            Design
+                        </h1>
+                        <p class="caption text-xl font-semibold2 text-justify">
+                            FYI, pernah juga join organisasi dan jobdesk disini ga jauh-jauh sama desain. Selain hobi juga jadi mau ga mau harus ngerjain jobdesk.
+                        </p>
+                    </div>
+                    <div class="card flex flex-col rounded-lg p-5 justify-center w-80 gap-4 h-auto bg-white">
+                        <img src="gambar\landscape\new.png" alt="" class="page2 transition-transform duration-200 transform hover:scale-110 cursor-pointer">
+                        <h1 class="name text-gray-800 text-left text-2xl font-bold">
+                            Nongkrong
+                        </h1>
+                        <p class="caption text-xl font-semibold2 text-justify">
+                            Namanya juga orang, kadang pasti juga ngerasa gabut. Sesekali oke lah, nongkrong ngapain? ya ngegame hehe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="wave sticky bottom-0 left-0 z-40 w-screen h-auto transform scale-y-[60%] origin-bottom overflow-y-hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L16,181.3C32,171,64,149,96,144C128,139,160,149,192,144C224,139,256,117,288,144C320,171,352,245,384,234.7C416,224,448,128,480,101.3C512,75,544,117,576,133.3C608,149,640,139,672,117.3C704,96,736,64,768,64C800,64,832,96,864,90.7C896,85,928,43,960,69.3C992,96,1024,192,1056,234.7C1088,277,1120,267,1152,261.3C1184,256,1216,256,1248,229.3C1280,203,1312,149,1344,128C1376,107,1408,117,1424,122.7L1440,128L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3 -->
+    <section class="page3" id="page3">
+        <div class="container2 pt-2 w-full bg-white flex flex-col mx-auto h-auto justify-center items-center" id="page2" style="margin-top: -2px;">
+            <div class="content2 flex mx-auto w-11/12 md:w-10/12 flex-col">
+                <h1 class="name text-blue-700 text-left text-5xl font-bold pb-3">
+                    Portofolio
+                </h1>
+                <p class="text text-xl text-gray-800 text-justify">
+                    Berikut merupakan beberapa project yang dilakukan dalam tim ataupun individu dalam beberapa waktu kebelakang.
+                </p>
+                <div class="activity flex flex-row justify-around pt-10 flex-wrap gap-y-6">
+                    <div class="card flex flex-col rounded-lg p-3 justify-between w-80 h-auto bg-white">
+                        <img src="gambar/portofolio/esc.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
+                        <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
+                            Website Electrical Science Club 2024
+                        </h1>
+                        <p class="caption text-xl font-semibold2 text-justify">
+                            Sebagai Front End Developer
+                        </p>
+                    </div>
+                    <div class="card flex flex-col rounded-lg p-3 justify-between w-80 h-auto bg-white">
+                        <img src="gambar/portofolio/Separo.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
+                        <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
+                            Separo : Sistem Peminjaman Ruang Online
+                        </h1>
+                        <p class="caption text-xl font-semibold2 text-justify">
+                            Sebagai Front End Developer
+                        </p>
+                    </div>
+                    <div class="card flex flex-col rounded-lg p-3 justify-between w-80 h-auto bg-white">
+                        <img src="gambar/portofolio/arcaloka.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
+                        <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
+                            Arcaloka : Gamifikasi Dalam Edukasi Sejarah
+                        </h1>
+                        <p class="caption text-xl font-semibold2 text-justify">
+                            Sebagai UI/UX Designer
+                        </p>
+                    </div>
+                    <div class="card flex flex-col rounded-lg p-3 justify-between w-80 h-auto bg-white">
+                        <img src="gambar/jtravel/1.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
+                        <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
+                            JTravel : Website panduan wisata jepang
+                        </h1>
+                        <p class="caption text-xl font-semibold2 text-justify">
+                            Sebagai Front End Developer
+                        </p>
+                    </div>
+                    <div class="card flex flex-col rounded-lg p-3 justify-between w-80 h-auto bg-white">
+                        <img src="gambar/smarthome/1.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
+                        <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
+                            SmartHome website
+                        </h1>
+                        <p class="caption text-xl font-semibold2 text-justify">
+                            Sebagai Front End Developer
+                        </p>
+                    </div>
+                    <div class="card flex flex-col rounded-lg p-3 justify-between w-80 h-auto bg-white">
+                        <img src="gambar/portofolio/Zakatify.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
+                        <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
+                            Zakafity:Aplikasi Asistensi Zakat
+                        </h1>
+                        <p class="caption text-xl font-semibold2 text-justify">
+                            Sebagai UI/UX Developer
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="wave sticky bottom-0 left-0 z-40 w-full h-auto transform scale-y-[80%] origin-bottom overflow-y-hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2563EB" fill-opacity="1" d="M0,160L72,32L144,224L216,224L288,224L360,96L432,128L504,64L576,160L648,128L720,256L792,224L864,288L936,256L1008,64L1080,288L1152,192L1224,64L1296,32L1368,192L1440,128L1440,320L1368,320L1296,320L1224,320L1152,320L1080,320L1008,320L936,320L864,320L792,320L720,320L648,320L576,320L504,320L432,320L360,320L288,320L216,320L144,320L72,320L0,320Z"></path></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 4 -->
+    <section class="page4" id="page2">
+        <div class="container2 absolute z-40 pt-2 w-full h-screen bg-blue-600 flex flex-col mx-auto justify-center items-center" id="page2" style="margin-top: -2px;">
+            <div class="content2 flex flex-col mx-auto w-10/12">
+                <h1 class="name text-white text-left text-5xl font-bold pb-3">
+                    Contact me
+                </h1>
+                <p class="text text-white text-justify text-xl">
+                    Oke selain itu, aku juga lumayan aktif berselancar di sosial media. Berikut beberapa contoh sosial media yang biasa aku gunakan, dan juga kalo mau kontak bisa langsung isi form yang langsung otomatis ke email.
+                </p>
+                <div class="kontenFooter flex flex-col-reverse md:flex-row w-full mt-4 mb-4">
+                    <div class="sosmed flex flex-col gap-2 w-auto h-auto md:w-1/2">
+                        <a href="https://instagram.com/farrelekptr" target="_blank">
+                            <div class="instagram flex items-center gap-3">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#fff" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                                </svg>
+                            </div>
+                            <div class="desc text-white text-xl">@Farrelekaptr</div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#fff" d="M8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-2 4v-2h2v2zM4 6H2q0-.825.588-1.412T4 4zm6 16v-2h2v2zm4 0v-2h2v2zM4 20v2q-.825 0-1.412-.587T2 20zm-2-2v-2h2v2zm0-4v-2h2v2zm0-4V8h2v2zm16 10h2q0 .825-.587 1.413T18 22zM13 8h7V4h-7z" />
+                                </svg>
+                            </div>
+                            </div>
+                        </a>
+                        <a href="https://discordapp.com/users/415092516262772736" target="_blank">
+                            <div class="discord flex items-center gap-3">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#fff" d="M8.52 13.846c-1.04 0-1.888-.945-1.888-2.101s.827-2.102 1.889-2.102c1.05 0 1.91.945 1.889 2.102c0 1.156-.839 2.1-1.89 2.1m6.974 0c-1.04 0-1.89-.945-1.89-2.101s.829-2.102 1.89-2.102c1.05 0 1.91.945 1.89 2.102c0 1.156-.829 2.1-1.89 2.1m-5.369-9.523l-.308-.563l-.634.106a16.4 16.4 0 0 0-4.158 1.28l-.228.105l-.142.21c-2.613 3.853-3.33 7.648-2.975 11.375l.039.407l.33.24a16.9 16.9 0 0 0 5.078 2.543l.79.242L9.03 17.55c1.91.472 4.03.472 5.939 0l1.107 2.717l.79-.242a16.8 16.8 0 0 0 5.08-2.545l.327-.238l.04-.402c.436-4.32-.697-8.083-2.958-11.384l-.142-.208l-.228-.104a16.6 16.6 0 0 0-4.154-1.28l-.618-.103l-.314.542c-.088.15-.177.32-.263.493a16 16 0 0 0-3.263 0c-.085-.17-.17-.333-.248-.474M6.715 16.61c.197.114.405.226.61.328l-.449 1.096a15 15 0 0 1-3.428-1.778c-.225-3.138.413-6.305 2.564-9.57a14.6 14.6 0 0 1 2.824-.913c.06.125.116.248.162.356l.273.643l.692-.101a14.1 14.1 0 0 1 4.09 0l.69.1l.272-.642c.047-.112.102-.234.16-.356c.977.21 1.923.52 2.828.915c1.875 2.82 2.821 5.966 2.546 9.567a15 15 0 0 1-3.43 1.779l-.445-1.095c.206-.102.414-.214.613-.329c.49-.282 1.017-.634 1.353-.97l-1.28-1.28c-.163.164-.523.42-.977.682c-.444.256-.885.463-1.167.556c-2.003.663-4.428.663-6.432 0c-.281-.093-.722-.3-1.166-.556c-.454-.261-.814-.518-.978-.682l-1.28 1.28c.337.336.864.688 1.354.97" />
+                                    </svg>
+                                </div>
+                                <div class="desc text-white text-xl">Ryuu4244</div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#fff" d="M8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-2 4v-2h2v2zM4 6H2q0-.825.588-1.412T4 4zm6 16v-2h2v2zm4 0v-2h2v2zM4 20v2q-.825 0-1.412-.587T2 20zm-2-2v-2h2v2zm0-4v-2h2v2zm0-4V8h2v2zm16 10h2q0 .825-.587 1.413T18 22zM13 8h7V4h-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muhammad-farrel-ekaputra-213bb3235/" target="_blank">
+                            <div class="linkedin flex items-center gap-3">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="none">
+                                            <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                            <path fill="#fff" d="M18 3a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zm0 2H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1M8 10a1 1 0 0 1 .993.883L9 11v5a1 1 0 0 1-1.993.117L7 16v-5a1 1 0 0 1 1-1m3-1a1 1 0 0 1 .984.821a6 6 0 0 1 .623-.313c.667-.285 1.666-.442 2.568-.159c.473.15.948.43 1.3.907c.315.425.485.942.519 1.523L17 12v4a1 1 0 0 1-1.993.117L15 16v-4c0-.33-.08-.484-.132-.555a.55.55 0 0 0-.293-.188c-.348-.11-.849-.052-1.182.09c-.5.214-.958.55-1.27.861L12 12.34V16a1 1 0 0 1-1.993.117L10 16v-6a1 1 0 0 1 1-1M8 7a1 1 0 1 1 0 2a1 1 0 0 1 0-2" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="desc text-white text-xl">Farrel Ekaputra</div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#fff" d="M8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-2 4v-2h2v2zM4 6H2q0-.825.588-1.412T4 4zm6 16v-2h2v2zm4 0v-2h2v2zM4 20v2q-.825 0-1.412-.587T2 20zm-2-2v-2h2v2zm0-4v-2h2v2zm0-4V8h2v2zm16 10h2q0 .825-.587 1.413T18 22zM13 8h7V4h-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="formEmail flex flex-col w-full md:w-1/2">
+                        <form id="emailForm" class="flex flex-col">
+                            <!-- Email Pengirim -->
+                            <label for="emailPengirim" class="text-lg text-white">Email Anda</label>
+                            <input type="email" id="emailPengirim" class="p-1 w-full rounded-md" required>
+                            <!-- Subject Email -->
+                            <label for="subjectEmail" class="text-lg text-white mt-2">Subject Email</label>
+                            <input type="text" id="subjectEmail" class="p-1 w-full rounded-md" required>
+                            <!-- Isi Email -->
+                            <label for="isiEmail" class="text-lg text-white mt-2">Isi Email</label>
+                            <textarea id="isiEmail" class="rounded-md" required></textarea>
+                            <!-- Tombol Kirim -->
+                            <button type="submit" class="p-2 px-2 w-1/3 mt-4 bg-white text-blue-600 rounded-md font-semibold hover:bg-blue-200">
+                                Kirim Email
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    // Event listener untuk tombol toggle menu
+    menuToggle.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden'); // Show/hide menu
+    });
+
+    // Fungsi untuk mengecek posisi halaman
+    function updateSocialMediaIcons() {
+            const page2 = document.querySelector("#page2");
+            const socialMediaContainer = document.querySelector(".sosmed");
+            const icons = socialMediaContainer.querySelectorAll("svg");
+
+            // Dapatkan jarak atas elemen page2 ke viewport
+            const page2Rect = page2.getBoundingClientRect();
+
+            // Jika halaman page2 terlihat di viewport
+            if (page2Rect.top <= window.innerHeight && page2Rect.bottom >= 0) {
+                icons.forEach(icon => icon.classList.add("icon-white"));
+            } else {
+                icons.forEach(icon => icon.classList.remove("icon-white"));
+            }
+        }
+
+        // Panggil fungsi saat halaman di-scroll atau dimuat ulang
+        window.addEventListener("scroll", updateSocialMediaIcons);
+        window.addEventListener("load", updateSocialMediaIcons);
+</script>
+<script>
+    document.getElementById("emailForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Ambil nilai dari input
+        var emailPengirim = document.getElementById("emailPengirim").value;
+        var subject = document.getElementById("subjectEmail").value;
+        var isiEmail = document.getElementById("isiEmail").value;
+
+        // Format mailto
+        var mailtoLink = `mailto:farrelelekaputra1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Dari: " + emailPengirim + "\n\n" + isiEmail)}`;
+
+        // Buka email client
+        window.location.href = mailtoLink;
+    });
+</script>
 </html>
