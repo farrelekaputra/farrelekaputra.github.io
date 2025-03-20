@@ -315,7 +315,7 @@
                     Oke selain itu, aku juga lumayan aktif berselancar di sosial media. Berikut beberapa contoh sosial media yang biasa aku gunakan, dan juga kalo mau kontak bisa langsung isi form yang langsung otomatis ke email.
                 </p>
                 <div class="kontenFooter flex flex-col-reverse md:flex-row-reverse w-full mt-4 mb-4 md:justify-center">
-                    <div class="sosmed flex flex-col gap-2 w-auto h-auto -ms-10 md:-ms-0">
+                    <div class="sosmed flex flex-col gap-2 w-1/4 h-auto -ms-10 md:-ms-0">
                         <a href="https://instagram.com/farrelekptr" target="_blank">
                             <div class="instagram flex items-center gap-3">
                             <div class="icon">
@@ -365,14 +365,14 @@
                             </div>
                         </a>
                     </div>
-                    <div class="formKomentar flex flex-col w-full">
+                    <div class="formKomentar flex flex-col w-3/4">
                         <form id="komentarForm" class="flex flex-col">
-                            <label class="text-xl font-semibold mb-4 text-white">Berikan komentar untuk website ini</label>
+                            <label class="text-xl font-semibold mb-2 text-white">Berikan komentar untuk website ini</label>
                             <label for="namaPengirim" class="text-lg text-white">Nama atau alias</label>
                             <input type="text" id="namaPengirim" class="p-1 w-full md:w-3/4 rounded-md" required>
                             <label for="isiKomentar" class="text-lg text-white mt-2">Isi Komentar</label>
-                            <textarea id="isiKomentar" class="rounded-md w-full md:w-3/4" required></textarea>
-                            <button type="submit" class="p-2 px-2 w-1/3 mt-4 bg-white text-blue-600 rounded-md font-semibold hover:bg-blue-200">
+                            <textarea id="isiKomentar" class="rounded-md w-full md:w-3/4 p-1" required></textarea>
+                            <button type="submit" class="p-2 px-2 w-1/3 mt-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-blue-200">
                                 Kirim Komentar
                             </button>
                         </form>
@@ -395,7 +395,7 @@
                 function loadKomentar() {
                     const komentarList = JSON.parse(localStorage.getItem("komentar")) || [];
                     const komentarListContainer = document.querySelector(".komentarList");
-                    komentarListContainer.innerHTML = ""; // Hanya kosongkan komentar, bukan header
+                    komentarListContainer.innerHTML = "";
 
                     if (komentarList.length === 0) {
                         komentarContainer.classList.add("hidden");
@@ -418,7 +418,7 @@
                         </div>
                         <a href="#" class="deleteComment text-red-500 hover:text-red-700" data-index="${index}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="#1e1e1e" d="M7 21q-.825 0-1.412-.587T5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.587 1.413T17 21zM17 6H7v13h10zM9 17h2V8H9zm4 0h2V8h-2zM7 6v13z" />
+                                <path d="M7 21q-.825 0-1.412-.587T5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.587 1.413T17 21zM17 6H7v13h10zM9 17h2V8H9zm4 0h2V8h-2zM7 6v13z" />
                             </svg>
                         </a>
                     `;
