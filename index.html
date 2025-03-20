@@ -306,7 +306,7 @@
 
     <!-- Page 4 -->
     <section class="page4" id="page2">
-        <div class="container2 absolute z-40 pt-2 w-full h-screen bg-blue-600 flex flex-col mx-auto justify-center items-center" id="page2" style="margin-top: -2px;">
+        <div class="container2 absolute z-40 pt-2 w-full h-auto bg-blue-600 flex flex-col mx-auto justify-center items-center" id="page2" style="margin-top: -2px;">
             <div class="content2 flex flex-col mx-auto w-10/12">
                 <h1 class="name text-white text-left text-5xl font-bold pb-3">
                     Contact me
@@ -314,8 +314,8 @@
                 <p class="text text-white text-justify text-xl">
                     Oke selain itu, aku juga lumayan aktif berselancar di sosial media. Berikut beberapa contoh sosial media yang biasa aku gunakan, dan juga kalo mau kontak bisa langsung isi form yang langsung otomatis ke email.
                 </p>
-                <div class="kontenFooter flex flex-col-reverse md:flex-row w-full mt-4 mb-4">
-                    <div class="sosmed flex flex-col gap-2 w-auto h-auto md:w-1/2">
+                <div class="kontenFooter flex flex-col-reverse md:flex-row-reverse w-full mt-4 mb-4 md:justify-center">
+                    <div class="sosmed flex flex-col gap-2 w-auto h-auto -ms-10 md:-ms-0">
                         <a href="https://instagram.com/farrelekptr" target="_blank">
                             <div class="instagram flex items-center gap-3">
                             <div class="icon">
@@ -365,73 +365,114 @@
                             </div>
                         </a>
                     </div>
-                    <div class="formEmail flex flex-col w-full md:w-1/2">
-                        <form id="emailForm" class="flex flex-col">
-                            <!-- Email Pengirim -->
-                            <label for="emailPengirim" class="text-lg text-white">Email Anda</label>
-                            <input type="email" id="emailPengirim" class="p-1 w-full rounded-md" required>
-                            <!-- Subject Email -->
-                            <label for="subjectEmail" class="text-lg text-white mt-2">Subject Email</label>
-                            <input type="text" id="subjectEmail" class="p-1 w-full rounded-md" required>
-                            <!-- Isi Email -->
-                            <label for="isiEmail" class="text-lg text-white mt-2">Isi Email</label>
-                            <textarea id="isiEmail" class="rounded-md" required></textarea>
-                            <!-- Tombol Kirim -->
+                    <div class="formKomentar flex flex-col w-full">
+                        <form id="komentarForm" class="flex flex-col">
+                            <label class="text-xl font-semibold mb-4 text-white">Berikan komentar untuk website ini</label>
+                            <label for="namaPengirim" class="text-lg text-white">Nama atau alias</label>
+                            <input type="text" id="namaPengirim" class="p-1 w-full md:w-3/4 rounded-md" required>
+                            <label for="isiKomentar" class="text-lg text-white mt-2">Isi Komentar</label>
+                            <textarea id="isiKomentar" class="rounded-md w-full md:w-3/4" required></textarea>
                             <button type="submit" class="p-2 px-2 w-1/3 mt-4 bg-white text-blue-600 rounded-md font-semibold hover:bg-blue-200">
-                                Kirim Email
+                                Kirim Komentar
                             </button>
                         </form>
                     </div>
                 </div>
+                <div class="isiKomentar hidden mt-4 p-4 rounded-md shadow-md w-full bg-white">
+                    <h3 class="headerKomentar text-xl font-semibold mb-2 text-gray-800">Komentar:</h3>
+                    <div class="komentarList"></div>
+                </div>                                
             </div>
         </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const form = document.getElementById("komentarForm");
+                const namaInput = document.getElementById("namaPengirim");
+                const komentarInput = document.getElementById("isiKomentar");
+                const komentarContainer = document.querySelector(".isiKomentar");
+
+                // Fungsi untuk menampilkan komentar dari localStorage
+                function loadKomentar() {
+                    const komentarList = JSON.parse(localStorage.getItem("komentar")) || [];
+                    const komentarListContainer = document.querySelector(".komentarList");
+                    komentarListContainer.innerHTML = ""; // Hanya kosongkan komentar, bukan header
+
+                    if (komentarList.length === 0) {
+                        komentarContainer.classList.add("hidden");
+                    } else {
+                        komentarList.forEach(({ nama, komentar }, index) => {
+                            tambahKomentarKeHalaman(nama, komentar, index);
+                        });
+                        komentarContainer.classList.remove("hidden");
+                    }
+                }
+                // Fungsi untuk menambah komentar ke halaman
+                function tambahKomentarKeHalaman(nama, komentar, index) {
+                    const commentDiv = document.createElement("div");
+                    commentDiv.classList.add("komentar", "md-1/2","md:w-3/4", "bg-gray-300", "p-4", "mb-2", "rounded-md", "flex", "flex-row", "items-center", "justify-between");
+
+                    commentDiv.innerHTML = `
+                        <div class="flex-1 pr-4">
+                            <label class="font-semibold text-gray-800 text-lg block">${nama}</label>
+                            <p class="text-gray-800 whitespace-normal">${komentar}</p>
+                        </div>
+                        <a href="#" class="deleteComment text-red-500 hover:text-red-700" data-index="${index}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#1e1e1e" d="M7 21q-.825 0-1.412-.587T5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.587 1.413T17 21zM17 6H7v13h10zM9 17h2V8H9zm4 0h2V8h-2zM7 6v13z" />
+                            </svg>
+                        </a>
+                    `;
+
+                    komentarContainer.appendChild(commentDiv);
+                }
+
+                // Event Listener saat form dikirim
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    const nama = namaInput.value.trim();
+                    const komentar = komentarInput.value.trim();
+
+                    if (nama === "" || komentar === "") {
+                        alert("Harap isi semua kolom!");
+                        return;
+                    }
+
+                    // Simpan komentar ke localStorage
+                    const komentarList = JSON.parse(localStorage.getItem("komentar")) || [];
+                    komentarList.push({ nama, komentar });
+                    localStorage.setItem("komentar", JSON.stringify(komentarList));
+
+                    // Tambahkan komentar ke halaman
+                    tambahKomentarKeHalaman(nama, komentar, komentarList.length - 1);
+
+                    // Tampilkan div komentar
+                    komentarContainer.classList.remove("hidden");
+
+                    // Reset Form
+                    form.reset();
+                });
+
+                // Event delegation untuk menghapus komentar
+                komentarContainer.addEventListener("click", function (e) {
+                    if (e.target.closest(".deleteComment")) {
+                        e.preventDefault();
+                        const index = e.target.closest(".deleteComment").dataset.index;
+
+                        // Hapus komentar dari localStorage
+                        const komentarList = JSON.parse(localStorage.getItem("komentar")) || [];
+                        komentarList.splice(index, 1);
+                        localStorage.setItem("komentar", JSON.stringify(komentarList));
+
+                        // Reload komentar
+                        loadKomentar();
+                    }
+                });
+
+                // Load komentar saat halaman dimuat
+                loadKomentar();
+            });
+        </script>
     </section>
 
 </body>
-<script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const dropdownMenu = document.getElementById('dropdown-menu');
-
-    // Event listener untuk tombol toggle menu
-    menuToggle.addEventListener('click', () => {
-        dropdownMenu.classList.toggle('hidden'); // Show/hide menu
-    });
-
-    // Fungsi untuk mengecek posisi halaman
-    function updateSocialMediaIcons() {
-            const page2 = document.querySelector("#page2");
-            const socialMediaContainer = document.querySelector(".sosmed");
-            const icons = socialMediaContainer.querySelectorAll("svg");
-
-            // Dapatkan jarak atas elemen page2 ke viewport
-            const page2Rect = page2.getBoundingClientRect();
-
-            // Jika halaman page2 terlihat di viewport
-            if (page2Rect.top <= window.innerHeight && page2Rect.bottom >= 0) {
-                icons.forEach(icon => icon.classList.add("icon-white"));
-            } else {
-                icons.forEach(icon => icon.classList.remove("icon-white"));
-            }
-        }
-
-        // Panggil fungsi saat halaman di-scroll atau dimuat ulang
-        window.addEventListener("scroll", updateSocialMediaIcons);
-        window.addEventListener("load", updateSocialMediaIcons);
-</script>
-<script>
-    document.getElementById("emailForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        // Ambil nilai dari input
-        var emailPengirim = document.getElementById("emailPengirim").value;
-        var subject = document.getElementById("subjectEmail").value;
-        var isiEmail = document.getElementById("isiEmail").value;
-
-        // Format mailto
-        var mailtoLink = `mailto:farrelelekaputra1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Dari: " + emailPengirim + "\n\n" + isiEmail)}`;
-
-        // Buka email client
-        window.location.href = mailtoLink;
-    });
-</script>
 </html>
