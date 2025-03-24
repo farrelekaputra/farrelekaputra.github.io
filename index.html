@@ -6,76 +6,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Farrel Ekaputra</title>
     <link rel="icon" type="image/x-icon" href="gambar/icon website.svg">
     <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    html{
-        background-color: rgb(239,241,253);
-        overflow-x: hidden !important;
-        scroll-behavior: smooth;
-    }
-    .sosmed .icon-white svg {
-    fill: white;
-}
-
-    @media (min-width: 0px) and (max-width: 576px) {
-    .container{
-        padding-top: 25%;
-        padding-bottom: 40%;
-        width: 90% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        /* margin: auto !important;
-        align-content: center !important;
-        align-items: center !important;
-        row-gap: -20% !important; */
-    }
-    .container .profilPics{
-        width: 80% !important;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-    .aboutMe{
-        width: 80% !important;
-        text-align: justify;
-        padding-top: 3rem !important;
-    }
-    h1{
-        font-size: 2rem !important;
-    }
-    p{
-        font-size: 1.2rem !important;
-    }
-    .sosmed{
-        scale: 0.8 !important;
-        left: 8px !important;
-        bottom : 8px !important;
-    }
-    .container2{
-        padding-top: 6% !important;
-        height: auto !important;
-        justify-content: center;
-    }
-    .content2{
-        width: 80% !important;
-    }
-    .activity{
-        flex-direction: column !important;
-        align-items: center;
-    }
-    .card{
-        margin-bottom: 6%;
-        width: 18rem !important;
-    }
-    }
-</style>
 <body class="body overflow-x-hidden">
     <!-- Sosmed logo -->
     <div class="sosmed fixed bottom-4 left-4 z-40" id="socialMediaContainer">
@@ -97,7 +33,7 @@
         <nav class="bg-white flex justify-center z-50 w-full fixed top-0 p-4">
             <div class="content-center bg-white w-full flex flex-wrap items-center justify-between mx-auto p-2 px-10 sticky top-0">
                 <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span class="self-center text-2xl font-bold whitespace-nowrap text-gray-900">M. Farrel Ekaputra</span>
+                    <span class="font1 self-center text-3xl whitespace-nowrap text-gray-900">M. Farrel Ekaputra</span>
                 </a>
                 <!-- Button for toggling menu -->
                 <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
@@ -134,7 +70,7 @@
                 <img src="gambar/updateMe.png" class="pics border-8 rounded-full  border-blue-700 w-80 transition-all duration-200 transform hover:scale-110 hover:origin-center cursor-pointer" alt="">
             </div>
             <div class="aboutMe flex w-1/2 flex-col gap-2 flex-wrap">
-                <h1 class="name text-blue-600 text-left text-5xl font-bold pb-3">Hi, im Farrel</h1>
+                <h1 class="font2 text-blue-600 text-left text-5xl font-semibold pb-3">Hi, im Farrel</h1>
                 <div class="walking-text w-1/2 transition-opacity ease-in flex justify-start gap-2 md:gap-8">
                     <div class="html flex gap-1">
                         <div class="icon">
@@ -142,7 +78,7 @@
                                 <path fill="#2563EB" d="m3 2l1.578 17.824L12 22l7.467-2.175L21 2zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565l-4.246 1.381l-4.281-1.455l-.288-2.932h2.024l.16 1.411l2.4.815l2.346-.763l.297-3.005H7.416l-.562-6.05h10.412z" />
                             </svg>
                         </div>
-                        <div class="caption text-xl font-semibold">
+                        <div class="font2 caption text-xl">
                             <p>HTML</p>
                         </div>
                     </div>
@@ -152,7 +88,7 @@
                                 <path fill="#2563EB" d="M12 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.31.74 1.91 1.35c.98 1 2.09 2.15 4.59 2.15c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C15.61 7.15 14.5 6 12 6m-5 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.3.74 1.91 1.35C8.39 16.85 9.5 18 12 18c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C10.61 13.15 9.5 12 7 12" />
                             </svg>
                         </div>
-                        <div class="caption text-xl font-semibold">
+                        <div class="font2 caption text-xl">
                             Tailwind
                         </div>
                     </div>
@@ -162,7 +98,7 @@
                                 <path fill="#2563EB" fill-rule="evenodd" d="M8.667 9.417a2.583 2.583 0 1 0 0 5.166h2.583V9.417zm2.583-1.5H8.667a2.583 2.583 0 0 1 0-5.167h2.583zm1.5-5.167v5.167h2.583a2.584 2.584 0 0 0 0-5.167zm2.583 6.666a2.583 2.583 0 0 0-2.583 2.542v.083a2.583 2.583 0 1 0 2.583-2.625m-6.666 6.667a2.584 2.584 0 1 0 2.583 2.584v-2.584z" clip-rule="evenodd" />
                             </svg>
                         </div>
-                        <div class="caption text-xl font-semibold">
+                        <div class="font2 caption text-xl">
                             Ui/Ux
                         </div>
                     </div>
@@ -172,7 +108,7 @@
                                 <path fill="#2563EB" fill-rule="evenodd" d="M8.308.922L6.75 3q.07.053.134.116l4 4q.063.063.116.134l2.078-1.558a1 1 0 0 0 .107-1.507L9.815.815a1 1 0 0 0-1.507.107M1.381 5.254L.166 12.95L3.116 10l-.308-.308a.625.625 0 0 1 .884-.884l1.5 1.5a.625.625 0 0 1-.884.884L4 10.884l-2.95 2.95l7.696-1.215a1 1 0 0 0 .838-.877L10 8L6 4l-3.742.416a1 1 0 0 0-.877.838" clip-rule="evenodd" />
                             </svg>
                         </div>
-                        <div class="caption text-xl font-semibold">Illustration</div>
+                        <div class="font2 caption text-xl">Illustration</div>
                     </div>
                 </div>
                 <p class="text text-xl">
@@ -189,34 +125,34 @@
     <section class="page2" id="page2">
         <div class="container2 pt-2 w-full bg-blue-600 flex flex-col mx-auto h-auto justify-center items-center" id="page2" style="margin-top: -2px;">
             <div class="content2 flex mx-auto w-10/12 flex-col">
-                <h1 class="name text-white text-left text-5xl font-bold pb-3">
+                <h1 class="font2 text-white text-left text-5xl font-semibold pb-3">
                     What do i do?
                 </h1>
                 <p class="text text-white text-justify text-xl">
                     Sebenarnya ada banyak kegiatan yang biasa ku lakuin waktu senggang, tapi karena ukuran halaman yang seadanya dan nanti page lain ga kebagian, jadi ditaruh top 3 kegiatan yang sering dilakuin sehari-hari.
                 </p>
                 <div class="activity flex flex-row justify-center gap-10 pt-10">
-                    <div class="card flex flex-col rounded-lg p-5 justify-center w-80 gap-4 h-auto bg-white">
+                    <div class="card flex flex-col p-5 justify-center w-80 gap-4 h-auto bg-white">
                         <img src="gambar\landscape\programming.png" alt="" class="page2 transition-transform duration-200 transform hover:scale-110 cursor-pointer">
-                        <h1 class="name text-gray-800 text-left text-2xl font-bold">
+                        <h1 class="text-gray-800 text-left text-2xl font-bold">
                             Programming
                         </h1>
                         <p class="caption text-xl font-semibold2 text-justify">
                             Berhubung di jurusan yang mengandung informatika, jadi ya gara-gara tugas atau gabut juga sering bikin program atau web (kadang).
                         </p>
                     </div>
-                    <div class="card flex flex-col rounded-lg p-5 justify-center w-80 gap-4 h-auto bg-white">
+                    <div class="card flex flex-col p-5 justify-center w-80 gap-4 h-auto bg-white">
                         <img src="gambar\landscape\room.png" alt="" class="page2 transition-transform duration-200 transform hover:scale-110 cursor-pointer">
-                        <h1 class="name text-gray-800 text-left text-2xl font-bold">
+                        <h1 class="text-gray-800 text-left text-2xl font-bold">
                             Design
                         </h1>
                         <p class="caption text-xl font-semibold2 text-justify">
                             FYI, pernah juga join organisasi dan jobdesk disini ga jauh-jauh sama desain. Selain hobi juga jadi mau ga mau harus ngerjain jobdesk.
                         </p>
                     </div>
-                    <div class="card flex flex-col rounded-lg p-5 justify-center w-80 gap-4 h-auto bg-white">
+                    <div class="card flex flex-col p-5 justify-center w-80 gap-4 h-auto bg-white">
                         <img src="gambar\landscape\new.png" alt="" class="page2 transition-transform duration-200 transform hover:scale-110 cursor-pointer">
-                        <h1 class="name text-gray-800 text-left text-2xl font-bold">
+                        <h1 class="text-gray-800 text-left text-2xl font-bold">
                             Nongkrong
                         </h1>
                         <p class="caption text-xl font-semibold2 text-justify">
@@ -225,8 +161,10 @@
                     </div>
                 </div>
             </div>
-            <div class="wave sticky bottom-0 left-0 z-40 w-screen h-auto transform scale-y-[60%] origin-bottom overflow-y-hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L16,181.3C32,171,64,149,96,144C128,139,160,149,192,144C224,139,256,117,288,144C320,171,352,245,384,234.7C416,224,448,128,480,101.3C512,75,544,117,576,133.3C608,149,640,139,672,117.3C704,96,736,64,768,64C800,64,832,96,864,90.7C896,85,928,43,960,69.3C992,96,1024,192,1056,234.7C1088,277,1120,267,1152,261.3C1184,256,1216,256,1248,229.3C1280,203,1312,149,1344,128C1376,107,1408,117,1424,122.7L1440,128L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path></svg>
+            <div class="wave sticky bottom-0 left-0 z-40 w-full h-auto transform scale-y-[60%] origin-bottom overflow-y-hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#ffffff" fill-opacity="1" d="M0,128L0,256L36.9,256L36.9,320L73.8,320L73.8,160L110.8,160L110.8,192L147.7,192L147.7,64L184.6,64L184.6,96L221.5,96L221.5,256L258.5,256L258.5,160L295.4,160L295.4,64L332.3,64L332.3,224L369.2,224L369.2,224L406.2,224L406.2,96L443.1,96L443.1,256L480,256L480,32L516.9,32L516.9,128L553.8,128L553.8,224L590.8,224L590.8,64L627.7,64L627.7,0L664.6,0L664.6,320L701.5,320L701.5,256L738.5,256L738.5,0L775.4,0L775.4,256L812.3,256L812.3,128L849.2,128L849.2,32L886.2,32L886.2,192L923.1,192L923.1,32L960,32L960,32L996.9,32L996.9,288L1033.8,288L1033.8,160L1070.8,160L1070.8,256L1107.7,256L1107.7,224L1144.6,224L1144.6,32L1181.5,32L1181.5,224L1218.5,224L1218.5,32L1255.4,32L1255.4,32L1292.3,32L1292.3,128L1329.2,128L1329.2,64L1366.2,64L1366.2,288L1403.1,288L1403.1,160L1440,160L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"></path>
+                </svg>
             </div>
         </div>
     </section>
@@ -235,14 +173,14 @@
     <section class="page3" id="page3">
         <div class="container2 pt-2 w-full bg-white flex flex-col mx-auto h-auto justify-center items-center" id="page2" style="margin-top: -2px;">
             <div class="content2 flex mx-auto w-11/12 md:w-10/12 flex-col">
-                <h1 class="name text-blue-700 text-left text-5xl font-bold pb-3">
+                <h1 class="font2 text-blue-700 text-left text-5xl font-bold pb-3">
                     Portofolio
                 </h1>
                 <p class="text text-xl text-gray-800 text-justify">
                     Berikut merupakan beberapa project yang dilakukan dalam tim ataupun individu dalam beberapa waktu kebelakang.
                 </p>
                 <div class="activity flex flex-row justify-around pt-10 flex-wrap gap-y-6">
-                    <div class="card flex flex-col rounded-lg p-3 justify-between w-80 h-auto bg-white">
+                    <a href="https://electrical-science-club.vercel.app/" class="card flex flex-col p-3 justify-between w-80 h-auto bg-white">
                         <img src="gambar/portofolio/esc.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
                         <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
                             Website Electrical Science Club 2024
@@ -250,8 +188,8 @@
                         <p class="caption text-xl font-semibold2 text-justify">
                             Sebagai Front End Developer
                         </p>
-                    </div>
-                    <div class="card flex flex-col rounded-lg p-3 justify-between w-80 h-auto bg-white">
+                    </a>
+                    <a href="#" class="card flex flex-col p-3 justify-between w-80 h-auto bg-white">
                         <img src="gambar/portofolio/separo.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
                         <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
                             Separo : Sistem Peminjaman Ruang Online
@@ -259,8 +197,8 @@
                         <p class="caption text-xl font-semibold2 text-justify">
                             Sebagai Front End Developer
                         </p>
-                    </div>
-                    <div class="card flex flex-col rounded-lg p-3 justify-between w-80 h-auto bg-white">
+                    </a>
+                    <a href="https://www.figma.com/proto/erI5vU0NNZMNRRq2eFlN7K/ARCALOKA-PROJECT?node-id=0-1&t=FCbiJHI6cALmMcCX-1" class="card flex flex-col p-3 justify-between w-80 h-auto bg-white">
                         <img src="gambar/portofolio/arcaloka.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
                         <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
                             Arcaloka : Gamifikasi Dalam Edukasi Sejarah
@@ -268,8 +206,8 @@
                         <p class="caption text-xl font-semibold2 text-justify">
                             Sebagai UI/UX Designer
                         </p>
-                    </div>
-                    <div class="card flex flex-col rounded-lg p-3 justify-between w-80 h-auto bg-white">
+                    </a>
+                    <a href="https://farrelekaputra.github.io/jtravel.github.io/" class="card flex flex-col p-3 justify-between w-80 h-auto bg-white">
                         <img src="gambar/jtravel/1.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
                         <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
                             JTravel : Website panduan wisata jepang
@@ -277,8 +215,8 @@
                         <p class="caption text-xl font-semibold2 text-justify">
                             Sebagai Front End Developer
                         </p>
-                    </div>
-                    <div class="card flex flex-col rounded-lg p-3 justify-between w-80 h-auto bg-white">
+                    </a>
+                    <div class="card flex flex-col p-3 justify-between w-80 h-auto bg-white">
                         <img src="gambar/smarthome/1.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
                         <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
                             SmartHome website
@@ -287,7 +225,7 @@
                             Sebagai Front End Developer
                         </p>
                     </div>
-                    <div class="card flex flex-col rounded-lg p-3 justify-between w-80 h-auto bg-white">
+                    <div class="card flex flex-col p-3 justify-between w-80 h-auto bg-white">
                         <img src="gambar/portofolio/Zakatify.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
                         <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
                             Zakafity:Aplikasi Asistensi Zakat
@@ -298,8 +236,8 @@
                     </div>
                 </div>
             </div>
-            <div class="wave sticky bottom-0 left-0 z-40 w-full h-auto transform scale-y-[80%] origin-bottom overflow-y-hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2563EB" fill-opacity="1" d="M0,160L72,32L144,224L216,224L288,224L360,96L432,128L504,64L576,160L648,128L720,256L792,224L864,288L936,256L1008,64L1080,288L1152,192L1224,64L1296,32L1368,192L1440,128L1440,320L1368,320L1296,320L1224,320L1152,320L1080,320L1008,320L936,320L864,320L792,320L720,320L648,320L576,320L504,320L432,320L360,320L288,320L216,320L144,320L72,320L0,320Z"></path></svg>
+            <div class="wave sticky bottom-0 left-0 z-40 w-full h-auto transform scale-y-[60%] origin-bottom overflow-y-hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2563EB" fill-opacity="1" d="M0,64L0,192L36.9,192L36.9,160L73.8,160L73.8,224L110.8,224L110.8,64L147.7,64L147.7,192L184.6,192L184.6,32L221.5,32L221.5,64L258.5,64L258.5,224L295.4,224L295.4,160L332.3,160L332.3,96L369.2,96L369.2,128L406.2,128L406.2,64L443.1,64L443.1,224L480,224L480,256L516.9,256L516.9,224L553.8,224L553.8,64L590.8,64L590.8,160L627.7,160L627.7,256L664.6,256L664.6,32L701.5,32L701.5,96L738.5,96L738.5,64L775.4,64L775.4,288L812.3,288L812.3,32L849.2,32L849.2,160L886.2,160L886.2,224L923.1,224L923.1,32L960,32L960,96L996.9,96L996.9,128L1033.8,128L1033.8,96L1070.8,96L1070.8,192L1107.7,192L1107.7,32L1144.6,32L1144.6,32L1181.5,32L1181.5,256L1218.5,256L1218.5,160L1255.4,160L1255.4,224L1292.3,224L1292.3,160L1329.2,160L1329.2,64L1366.2,64L1366.2,256L1403.1,256L1403.1,192L1440,192L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"></path></svg>
             </div>
         </div>
     </section>
@@ -308,7 +246,7 @@
     <section class="page4" id="page2">
         <div class="container2 absolute z-40 pt-2 w-full h-auto bg-blue-600 flex flex-col mx-auto justify-center items-center" id="page2" style="margin-top: -2px;">
             <div class="content2 flex flex-col mx-auto w-10/12">
-                <h1 class="name text-white text-left text-5xl font-bold pb-3">
+                <h1 class="font2 text-white text-left text-5xl font-bold pb-3">
                     Contact me
                 </h1>
                 <p class="text text-white text-justify text-xl">
@@ -323,7 +261,7 @@
                                     <path fill="#fff" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
                                 </svg>
                             </div>
-                            <div class="desc text-white text-xl">@Farrelekaptr</div>
+                            <div class="desc text-white text-xl">@farrelekaptr</div>
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <path fill="#fff" d="M8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-2 4v-2h2v2zM4 6H2q0-.825.588-1.412T4 4zm6 16v-2h2v2zm4 0v-2h2v2zM4 20v2q-.825 0-1.412-.587T2 20zm-2-2v-2h2v2zm0-4v-2h2v2zm0-4V8h2v2zm16 10h2q0 .825-.587 1.413T18 22zM13 8h7V4h-7z" />
@@ -368,11 +306,11 @@
                     <div class="formKomentar flex flex-col w-3/4">
                         <form id="komentarForm" class="flex flex-col">
                             <label class="text-xl font-semibold mb-2 text-white">Berikan komentar untuk website ini</label>
-                            <label for="namaPengirim" class="text-lg text-white">Nama atau alias</label>
+                            <label for="namaPengirim" class="text-lg font-semibold text-white">Nama atau alias</label>
                             <input type="text" id="namaPengirim" class="p-1 w-full md:w-3/4 rounded-md" required>
-                            <label for="isiKomentar" class="text-lg text-white mt-2">Isi Komentar</label>
+                            <label for="isiKomentar" class="text-lg font-semibold text-white mt-2">Isi Komentar</label>
                             <textarea id="isiKomentar" class="rounded-md w-full md:w-3/4 p-1" required></textarea>
-                            <button type="submit" class="p-2 px-2 w-1/3 mt-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-blue-200">
+                            <button type="submit" class="flex justify-start p-2 px-2 w-1/3 mt-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-blue-200">
                                 Kirim Komentar
                             </button>
                         </form>
