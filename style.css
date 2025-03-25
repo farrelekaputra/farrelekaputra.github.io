@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/common-pixel');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/product-sans');
 
 @keyframes logo-spin {
     from {
@@ -41,6 +42,10 @@ html{
   font-family: 'Pixelify Sans', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.font3{
+  font-family: 'Product Sans', sans-serif;
 }
 
 .sosmed .icon-white svg {
