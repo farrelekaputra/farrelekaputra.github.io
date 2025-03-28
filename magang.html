@@ -12,22 +12,91 @@
     <link rel="icon" type="image/x-icon" href="gambar/icon website.svg">
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    html{
+        background-color: white;
+    }
+</style>
 <body>
-    <div class="container w-screen flex flex-col mx-auto gap-4 justify-center p-4">
-        <div class="content flex flex-col mx-auto w-full">
-            <section class="header flex w-full justify-end">
-                <span class="text-lg font-semibold text-gray-700 gap-16 me-4">Mini Blog</span>
-                <img src="gambar/updateMe.png" class="w-8 rounded-full" alt="profile">
-            </section>
-            <section class="title flex justify-center mx-auto w-full">
-                <h1 class="text-5xl flex mx-auto font-bold text-gray-700">Magang Akademik</h1>
+    <section class="navbar">
+        <nav class="bg-white flex justify-center z-50 w-full fixed top-0 p-0 md:p-4 md:px-44 shadow-md">
+            <div class="content-center bg-white w-full flex items-center justify-between mx-auto p-0 md:p-2 px-10 md:px-10 sticky top-0">
+                <a href="#" class="w-1/2 md:w-auto flex items-center space-x-3 rtl:space-x-reverse justify-start">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-700">Farrel Ekaputra</span>
+                </a>
+                <!-- Dropdown Menu -->
+                <div class="w-1/2 md:block md:w-auto transition-all ease-in-out duration-300 justify-end md:justify-between">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white justify-end md:justify-between">
+                        <li>
+                            <span class="text-lg font-semibold text-gray-700 gap-16 me-0 md:me-4 hidden md:block">Mini Blog</span>
+                        </li>
+                        <li>
+                            <img src="gambar/updateMe.png" class="w-8 rounded-full ms-36 md:ms-0" alt="profile">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div class="container mt-24 md:mt-28 w-screen flex flex-col mx-auto gap-4 justify-center p-4">
+        
+        <!-- header -->
+        <section class="header flex w-full justify-center gap-8 items-center">
+            <span class="upload flex justify-start gap-2 items-center">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-gray-700 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m-1-2.05V18q-.825 0-1.412-.587T9 16v-1l-4.8-4.8q-.075.45-.137.9T4 12q0 3.025 1.988 5.3T11 19.95m6.9-2.55q1.025-1.125 1.563-2.512T20 12q0-2.45-1.362-4.475T15 4.6V5q0 .825-.587 1.413T13 7h-2v2q0 .425-.288.713T10 10H8v2h6q.425 0 .713.288T15 13v3h1q.65 0 1.175.388T17.9 17.4" />
+                        </svg>
+                    </div>
+                    <div class="text-lg text-gray-700 font-medium">
+                        28 Maret 2025
+                    </div>
+            </span>
+            <span class="title flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-gray-700 fill-current" viewBox="0 0 24 24">
+                    <path d="M2 3v18c0 .6.4 1 1 1h11V2H3c-.6 0-1 .4-1 1m19-1h-5v20h5c.6 0 1-.4 1-1V3c0-.6-.4-1-1-1" />
+                </svg>
+                <p class="text-lg text-gray-700 font-medium">College life</p>
+            </span>
+        </section>
+
+        <!-- Judul -->
+        <section class="title flex justify-center mx-auto w-full">
+            <h1 class="text-5xl flex mx-auto font-bold text-gray-700">Magang Akademik</h1>
+        </section>
+
+        <!-- konten -->
+        <div class="content flex flex-col mx-auto w-full md:p-4 rounded-md">
+            <section class="text w-full justify-center mt-4 md:p-4">
+                <p class="w-full md:w-3/4 mx-auto flex-wrap text-justify text-gray-700 text-lg/8 gap-y-2">
+                    Oke, bagi teman-teman dari sekolah kejuruan atau yang sekarang sedang dalam program perkuliahan 
+                    <i>(baik itu sarjana atau diploma)</i>, pasti nggak asing dengan istilah magang kan? 
+                    Nah, magang ini biasanya di tiap instansi atau sekolah berbeda cara penyebutannya 
+                    ada yang nyebut Prakerin <i>(Praktik Kerja Industri)</i>, PKL <i>(Praktik Kerja Lapangan)</i>, 
+                    atau PI <i>(Praktik Industri)</i> tapi disini kita sepakati buat nyebut pake istilah 
+                    <b>'Magang'</b> oke? Lanjut. <br> Selain buat nambah skill serta pengalaman real tentang 
+                    dunia industri, magang ini menjadi kebutuhan akademis, pada beberapa sekolah atau kampus 
+                    mungkin menjadikan magang sebagai syarat untuk kelulusan. Tapi, kalau kampus kalian punya 
+                    program MBKM dan memungkinkan konversi atau rekognisi <i>(Misalkan sebagai contoh ada 
+                        <b>Universitas Negeri Semarang</b>)</i>, magang bisa diganti dengan aktivitas lain. 
+                        Di beberapa kampus dan sekolah, magang malah jadi syarat kelulusan, jadi harus dijalani 
+                        biar bisa lulus dengan lancar.
+                </p>
             </section>
             <section class="gambar mt-4 -ms-10 md:ms-0 flex w-screen justify-center md:w-full">
                 <img src="gambar/magang.jpg" class="w-screen md:w-3/4" alt="">
             </section>
-            <section class="text w-full justify-center mt-4">
-                <p class="w-full mx-auto flex-wrap text-justify text-lg">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam optio laboriosam ad necessitatibus autem, iste iure quidem inventore numquam nam dolor provident quibusdam earum. Voluptates eligendi sequi blanditiis? Magnam, eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, provident natus doloribus mollitia esse aperiam laborum amet nisi accusantium, odio numquam tempora vero quidem distinctio sit iste obcaecati officia expedita? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quibusdam, aliquid sapiente voluptates deleniti vero voluptatem perspiciatis harum nesciunt iste aliquam culpa quia, enim tempora quo accusamus dolores debitis dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic culpa, perferendis inventore, totam quam alias tempore ex eligendi repudiandae officiis velit. Doloremque accusantium impedit cum aut mollitia aspernatur itaque officiis!
+            <section class="text w-full justify-center mt-4 md:p-4">
+                <p class="w-full md:w-3/4 mx-auto flex-wrap text-justify text-gray-700 text-lg/8 gap-y-2">
+                    Disini aku sebagai mahasiswa yang sedang menempuh semester 6 juga mengalami hal yang sama, 
+                    aku juga melaksanakan kegiatan magang selama 6 bulan. <i>"Lah lama banget kok sampe 6 bulan?"</i>
+                     oke jadi disini aku memutuskan buat magang 6 bulan untuk melakukan rekognisi mata kuliah 
+                     sejumlah 20sks. <br> Selain itu juga diharapkan dengan kegiatan magang ini aku dan beberapa 
+                     teman-teman dapat melakukan rekognisi kegiatan KKKN (<i>Kuliah Kerja Nyata</i>). 
+                     Oiya, sebelumnya dalam kegiatan magang ini dilakukan oleh satu kelompok ya, dengan jumlah 
+                     personil mahasiswa yang berbeda-beda, sebagai contoh pada kelompokku terdiri 
+                     dari 4 mahasiswa dari program studi yang sama, yaitu 
+                     <b>Pendidikan Teknik Informatika dan Komputer</b>.
                 </p>
             </section>
         </div>
