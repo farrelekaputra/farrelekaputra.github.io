@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Magang</title>
     <link rel="icon" type="image/x-icon" href="gambar/icon website.svg">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <style>
     html{
@@ -28,7 +28,7 @@
                 <div class="w-1/2 md:block md:w-auto transition-all ease-in-out duration-300 justify-end md:justify-between">
                     <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white justify-end md:justify-between">
                         <li>
-                            <span class="text-lg font-semibold text-gray-700 gap-16 me-0 md:me-4 hidden md:block">Mini Blog</span>
+                            <h1 class="text-lg font-semibold text-gray-700 gap-16 me-0 md:me-4 hidden md:block">Mini Blog</h1>
                         </li>
                         <li>
                             <img src="gambar/updateMe.png" class="w-8 rounded-full ms-36 md:ms-0" alt="profile">
@@ -38,7 +38,7 @@
             </div>
         </nav>
     </section>
-    <div class="container mt-24 md:mt-28 w-screen flex flex-col mx-auto gap-4 justify-center p-4">
+    <div class="container mt-24 md:mt-28 w-screen px-8 flex flex-col items-center justify-center mx-auto gap-4 p-4">
         
         <!-- header -->
         <section class="header flex w-full justify-center gap-8 items-center">
@@ -66,7 +66,7 @@
         </section>
 
         <!-- konten -->
-        <div class="content flex flex-col mx-auto w-full md:p-4 rounded-md">
+        <article class="content flex flex-col mx-auto w-full md:p-4 rounded-md">
             <section class="text w-full justify-center md:p-4">
                 <p class="w-full md:w-3/4 mx-auto flex-wrap text-justify text-gray-700 text-lg/8 gap-y-2">
                     Oke, bagi teman-teman dari sekolah kejuruan atau yang sekarang sedang dalam program perkuliahan 
@@ -81,9 +81,11 @@
                         <a class="font-medium">Universitas Negeri Semarang</a>)</i>, magang bisa diganti dengan aktivitas lain. 
                         Di beberapa kampus dan sekolah, magang malah jadi syarat kelulusan, jadi harus dijalani 
                         biar bisa lulus dengan lancar.
+                        <br> Sebagai catatan aku dan teman-temanku magang di salah satu perusahaan berbau IT dan tempat produksi naik itu
+                        berupa <i>software</i> dan <i>hardware</i> di kota Solo, Jawa Tengah. 
                 </p>
             </section>
-            <section class="gambar w-3/4 mt-4 flex items-center mx-auto flex-col justify-center aspect-[16/9]">
+            <section class="gambar w-full md:w-3/4 mt-4 flex flex-col items-center justify-center mx-auto aspect-[16/9]">
                 <img src="gambar/magang-2.jpg" class="w-full h-full object-cover" alt="">
                 <p class="flex italic mx-auto text-gray-700 text-base">Salah satu dokumentasi di tempat magang</p>
             </section>
@@ -113,29 +115,69 @@
                     layout yang nyaman, hingga pemilihan warna yang tepat supaya hasilnya maksimal.
                 </p>
             </section>
-            <section class="gambar w-3/4 mt-4 flex items-center mx-auto flex-col justify-center aspect-[16/9]">
+            <section class="gambar w-full md:w-3/4 mt-4 flex flex-col items-center justify-center mx-auto aspect-[16/9]">
                 <img src="gambar/magang-3.jpg" class="w-full h-full object-cover scale-x-[-1]" alt="">
                 <p class="flex italic mx-auto text-gray-700 text-base">Diskusi bahas project magang (teks hanya properti)</p>
             </section>
-              <section class="w-full flex flex-col items-center justify-center text-gray-700 md:p-4">
+              <section class="w-full flex flex-col items-center justify-center text-gray-700 md:p-4 mt-4">
                 <p class="w-full md:w-3/4 text-justify text-lg leading-8">
                   Selain handle jobdesk di bidang IT, aku dan tim juga diberikan beberapa jobdesk umum lainnya, yaitu:
                 </p>
-                <ol class="w-full md:w-3/4 list-decimal list-inside">
+                <ol class="w-full md:w-3/4 list-decimal list-inside flex flex-col gap-4">
                   <li>
-                    <span class="text-lg font-semibold">Manajemen Barang</span>
+                    <span class="text-lg font-semibold ms-8">Manajemen Barang</span>
                     <p class="deskripsi w-full text-justify text-lg leading-8">
                       Memang kedengarannya agak aneh <i>"kok bisa orang IT handle tugas manajemen barang"</i>. 
                       Jadi gini, sebenernya divisi yang aku masukin bareng tim itu semacam divisi yang mengatur 
                       manajemen barang perkantoran, jadi jelas ada tugas lain disamping mengembangkan website 
-                      yang sudah sempat disinggung sebelumnya.
+                      yang sudah sempat disinggung sebelumnya. <br>
+                      Bahkan ada di suatu kejadian pas lagi nge-data barang yang laporannya harus di foto,
+                      kan lokasi kami sama barang yang mau di data lumayan nih, ada kali 60-70m. Nah karena
+                      kami nangkep perintahnya kurang jelas, dan asal nge-data aja sampe bolak-balik 3x coy.
+                      Jadi kesimpulannya kalo dikasih perintah pastiin dan konfirmasi lagi aja, jangan sampe kebodohan
+                      kami kalian alami juga <i>(pegel aseli)</i>.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="text-lg font-semibold ms-8">Notulensi meeting</span>
+                    <p class="deskripsi w-full text-justify text-lg leading-8">
+                      Nah buat yang ini juga lumayan absurd nih, dalam satu kejadian dimana ruangan cuma 
+                      ada aku sama temenku berdua yang anak magang dan bakal diadain <i>meeting</i>, alhasil 
+                      kami berdua diajak dong buat ikut meeting dan disini ternyata dapet tugas buat Notulensi 
+                      <i>meeting</i>. Buat pengalaman yang ini <i>not bad</i> sih cuma baru pertama kali aja ngerasain jobdesk 
+                      nya seorang sekretaris. <br>
+                      Kuping perlu bener-bener dipasang dah disini, soalnya juga notulensi itu nyatet kan ya secara 
+                      bahasa kasar. Dari meeting ini juga dihadiri beberapa pihak dan perlu mencatat setiap pembicaraan
+                       penting dari pihak-pihak terkait, buat pengalaman ini aku kasih tier A.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="text-lg font-semibold ms-8">Tour Guide</span>
+                    <p class="deskripsi w-full text-justify text-lg leading-8">
+                      Mulai dari sini coba kalian renungkan dulu sejenak, seorang mahasiswa IT, 
+                      atau Ilmu Komputer, atau Informatika dapet tugas buat jadi seorang <i>tour guide</i>.
+                      Sebagai konteks, di tempat magang ku ini juga menerima beberapa kunjungan baik 
+                      dari sekolah, kampus, atau masyarakat umum untuk mendapatkan edukasi baik dari 
+                      sisi IT, Teknologi, atau keTeknik-an.
+                    </p>
+                    <section class="gambar w-full md:w-3/4 mt-4 flex flex-col items-center justify-center mx-auto aspect-[16/9]">
+                        <img src="gambar/magang.jpg" class="w-full h-full object-cover scale-x-[-1]" alt="">
+                        <figcaption class="text-gray-600 text-base italic mb-4 mx-auto items-center justify-center text-center">Foto bareng sama divisi sebelah</figcaption>
+                    </section>
+                    <p class="deskripsi w-full text-justify text-lg leading-8">
+                      Singkat cerita divisi magang kami diajak kolaborasi dari divisi lain untuk jadi 
+                      <i>tour guide</i>. Dan yap kami setuju, dan dari sini <i>tour guide</i> terdiri dari dua personil 
+                      untuk menjelaskan secara bergantian soal berbagai lokasi di tempat magang ku. Kami menjawab 
+                      beberapa pertanyaan dari peserta tour, memberikan penjelasan terkait, dan akhirnya selesai. 
+                      Cukup menyenangkan sih jadi tour guide, jujur ini pengalaman pertama dan ternyata lumayan asyik
+                      bisa berkomunikasi dengan beberapa peserta tour.
                     </p>
                   </li>
                 </ol>
               </section>
                                         
             
-        </div>
+        </article>
     </div>
 </body>
 </html>
