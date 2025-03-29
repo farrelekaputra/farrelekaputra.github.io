@@ -18,13 +18,15 @@
     }
 </style>
 <body>
+
+    <!-- navbar -->
     <section class="navbar">
         <nav class="bg-white flex justify-center z-50 w-full fixed top-0 p-0 md:p-4 md:px-44 shadow-md">
             <div class="content-center bg-white w-full flex items-center justify-between mx-auto p-0 md:p-2 px-10 md:px-10 sticky top-0">
                 <a href="#" class="w-1/2 md:w-auto flex items-center space-x-3 rtl:space-x-reverse justify-start">
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-700">Farrel Ekaputra</span>
+                    <span class="self-center hidden md:block text-2xl font-semibold whitespace-nowrap text-gray-700">Farrel Ekaputra</span>
+                    <span class="self-center md:hidden text-2xl font-semibold whitespace-nowrap text-gray-700">Mini Blog</span>
                 </a>
-                <!-- Dropdown Menu -->
                 <div class="w-1/2 md:block md:w-auto transition-all ease-in-out duration-300 justify-end md:justify-between">
                     <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white justify-end md:justify-between">
                         <li>
@@ -38,7 +40,7 @@
             </div>
         </nav>
     </section>
-    <div class="container mt-24 md:mt-28 w-screen px-8 flex flex-col items-center justify-center mx-auto gap-4 p-4">
+    <div class="container mt-24 md:mt-28 w-full flex flex-col items-center self-center justify-center mx-auto gap-4 p-4">
         
         <!-- header -->
         <section class="header flex w-full justify-center gap-8 items-center">
@@ -49,7 +51,7 @@
                         </svg>
                     </div>
                     <div class="text-lg text-gray-700 font-normal">
-                        28 Maret 2025
+                        30 Maret 2025
                     </div>
             </span>
             <span class="title flex items-center gap-2">
@@ -175,9 +177,22 @@
                   </li>
                 </ol>
               </section>
+              <section class="text w-full justify-center mt-2 md:p-4">
+                <p class="w-full md:w-3/4 mx-auto flex-wrap text-justify text-gray-700 text-lg/8 gap-y-2">
+                    Dan yap, mungkin sekian dulu untuk blog magang ku, semoga bisa 
+                    ngurangin rasa gabut kalian setelah baca blog ini <i>(walaupun keliatannya jelas engga)</i>.
+                    Dan semoga bisa ngasih pandangan buat kalian yang masih bingung terkait kegiatan magang, 
+                    ntah itu dari sisi pengalaman, atau dari sisi tips dan triknya. Oke cukup, <i>see ya!</i>
+                </p>
+            </section>
                                         
             
         </article>
+
+        <!-- footer -->
+         <footer class="flex mx-auto w-full justify-center items-center bg-blue-500 p-1 rounded-md">
+            <p class="text-lg font-medium text-white">&#169; M. Farrel Ekaputra 2025</p>
+         </footer>
     </div>
 </body>
 </html>
