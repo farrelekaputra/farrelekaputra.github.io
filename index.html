@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Farrel Ekaputra</title>
     <link rel="icon" type="image/x-icon" href="gambar/icon website.svg">
     <link rel="stylesheet" href="style.css">
@@ -139,30 +140,30 @@
                     Sebenarnya ada banyak kegiatan yang biasa ku lakuin waktu senggang, tapi karena ukuran halaman yang seadanya dan nanti page lain ga kebagian, jadi ditaruh top 3 kegiatan yang sering dilakuin sehari-hari.
                 </p>
                 <div class="activity flex flex-row justify-center gap-10 pt-10">
-                    <div class="card flex flex-col p-5 justify-center w-80 gap-4 h-auto bg-white">
-                        <img src="gambar\landscape\programming.png" alt="" class="page2 transition-transform duration-200 transform hover:scale-110 cursor-pointer">
-                        <h1 class="text-gray-800 text-left text-2xl font-bold">
+                    <div class="card flex flex-col p-5 justify-center w-1/3 gap-4 h-auto ">
+                        <img src="gambar\landscape\programming.png" alt="" class="page2 transition-transform w-60 duration-200 transform hover:scale-110 cursor-pointer">
+                        <h1 class="text-white text-left text-2xl font-bold">
                             Programming
                         </h1>
-                        <p class="caption text-xl font-semibold2 text-justify">
+                        <p class="caption text-xl font-semibold text-white text-justify">
                             Berhubung di jurusan yang mengandung informatika, jadi ya gara-gara tugas atau gabut juga sering bikin program atau web (kadang).
                         </p>
                     </div>
-                    <div class="card flex flex-col p-5 justify-center w-80 gap-4 h-auto bg-white">
-                        <img src="gambar\landscape\room.png" alt="" class="page2 transition-transform duration-200 transform hover:scale-110 cursor-pointer">
-                        <h1 class="text-gray-800 text-left text-2xl font-bold">
+                    <div class="card flex flex-col p-5 justify-center w-1/3 gap-4 h-auto ">
+                        <img src="gambar\landscape\room.png" alt="" class="page2 transition-transform duration-200 w-60 transform hover:scale-110 cursor-pointer">
+                        <h1 class="text-white text-left text-2xl font-bold">
                             Design
                         </h1>
-                        <p class="caption text-xl font-semibold2 text-justify">
+                        <p class="caption text-xl font-semibold text-white text-justify">
                             FYI, pernah juga join organisasi dan jobdesk disini ga jauh-jauh sama desain. Selain hobi juga jadi mau ga mau harus ngerjain jobdesk.
                         </p>
                     </div>
-                    <div class="card flex flex-col p-5 justify-center w-80 gap-4 h-auto bg-white">
-                        <img src="gambar\landscape\new.png" alt="" class="page2 transition-transform duration-200 transform hover:scale-110 cursor-pointer">
-                        <h1 class="text-gray-800 text-left text-2xl font-bold">
+                    <div class="card flex flex-col p-5 justify-center w-1/3 gap-4 h-auto ">
+                        <img src="gambar\landscape\new.png" alt="" class="page2 transition-transform duration-200 w-60 transform hover:scale-110 cursor-pointer">
+                        <h1 class="text-white text-left text-2xl font-bold">
                             Nongkrong
                         </h1>
-                        <p class="caption text-xl font-semibold2 text-justify">
+                        <p class="caption text-xl font-semibold text-white text-justify">
                             Namanya juga orang, kadang pasti juga ngerasa gabut. Sesekali oke lah, nongkrong ngapain? ya ngegame hehe.
                         </p>
                     </div>
@@ -250,27 +251,52 @@
     </section>
 
     <!-- Page 4 -->
-    <section class="page4" id="page2">
-        <div class="container2 absolute z-40 pt-2 w-full h-auto bg-blue-600 flex flex-col mx-auto justify-center items-center" id="page2" style="margin-top: -2px;">
+    <section class="page4" id="page4">
+        <div class="container2 z-40 pt-2 w-full h-auto bg-blue-600 flex flex-col mx-auto" id="page2" style="margin-top: -2px;">
             <div class="content2 flex flex-col mx-auto w-10/12">
                 <h1 class="font3 text-white text-left text-5xl font-bold pb-3">
                     Blog
                 </h1>
                 <p class="text text-white text-justify text-xl">
-                    Beberapa waktu terakhir aku juga coba nulis di mini blog buat iseng aja, sekalian buat dokumentasi.
-                </p>                             
+                    Beberapa waktu terakhir aku juga coba nulis di mini blog buat iseng aja, sekalian buat dokumentasi beberapa kegiatan dan iseng nulis-nulis aja kalo gabut, buat beberapa contoh ada blog yang udah upload ada dibawah.
+                </p>   
+                <div class="blogSite flex flex-row justify-around pt-10 flex-wrap gap-y-6">
+                    <a href="https://farrelekaputra.github.io/magang.html" target="_blank" class="card flex flex-col p-3 justify-start w-80 h-auto bg-blue-600">
+                        <img src="gambar/magang-2.jpg" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
+                        <h1 class="name text-white text-left text-2xl font-bold pt-3">
+                            Magang Akademik
+                        </h1>
+                    </a>
+                    <a href="https://farrelekaputra.github.io/daredevil.html" target="_blank" class="card flex flex-col p-3 justify-start w-80 h-auto bg-blue-600">
+                        <img src="gambar/daredevil-assets/matt-2.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
+                        <h1 class="name text-white text-left text-2xl font-bold pt-3">
+                            Review Series : Daredevil
+                        </h1>
+                    </a>
+                    <a id="halamanBlog" class="card group relative flex flex-col p-3 justify-start w-80 h-auto bg-blue-600">
+                        <div class="relative bg-white transition-transform duration-200 transform group-hover:scale-110 cursor-pointer">
+                            <img src="gambar/keyboard-assets/keebs.jpg" alt="" class="PortofolioPics w-full opacity-50">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <span class="text-gray-800 text-xl font-semibold">Lihat lebih</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wave sticky bottom-0 left-0 z-40 w-full h-auto transform scale-y-[60%] origin-bottom overflow-y-hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L0,192L36.9,192L36.9,160L73.8,160L73.8,224L110.8,224L110.8,64L147.7,64L147.7,192L184.6,192L184.6,32L221.5,32L221.5,64L258.5,64L258.5,224L295.4,224L295.4,160L332.3,160L332.3,96L369.2,96L369.2,128L406.2,128L406.2,64L443.1,64L443.1,224L480,224L480,256L516.9,256L516.9,224L553.8,224L553.8,64L590.8,64L590.8,160L627.7,160L627.7,256L664.6,256L664.6,32L701.5,32L701.5,96L738.5,96L738.5,64L775.4,64L775.4,288L812.3,288L812.3,32L849.2,32L849.2,160L886.2,160L886.2,224L923.1,224L923.1,32L960,32L960,96L996.9,96L996.9,128L1033.8,128L1033.8,96L1070.8,96L1070.8,192L1107.7,192L1107.7,32L1144.6,32L1144.6,32L1181.5,32L1181.5,256L1218.5,256L1218.5,160L1255.4,160L1255.4,224L1292.3,224L1292.3,160L1329.2,160L1329.2,64L1366.2,64L1366.2,256L1403.1,256L1403.1,192L1440,192L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"></path></svg>
             </div>
         </div>
     </section>
 
     <!-- Page 5 -->
     <section class="page5" id="page5">
-        <div class="container2 absolute z-40 pt-2 pb-8 w-full h-auto bg-blue-600 flex flex-col mx-auto justify-center items-center" id="page2" style="margin-top: -2px;">
+        <div class="container2 absolute z-40 pt-2 pb-8 w-full h-auto bg-white flex flex-col mx-auto justify-center items-center" id="page2" style="margin-top: -2px;">
             <div class="content2 flex flex-col mx-auto w-10/12">
-                <h1 class="font3 text-white text-left text-5xl font-bold pb-3">
+                <h1 class="font3 text-gray-800 text-left text-5xl font-bold pb-3">
                     Contact me
                 </h1>
-                <p class="text text-white text-justify text-xl">
+                <p class="text text-gray-800 text-justify text-xl">
                     Oke selain itu, aku juga lumayan aktif berselancar di sosial media. Berikut beberapa contoh sosial media yang biasa aku gunakan, dan juga kalo mau kontak bisa langsung isi form yang langsung otomatis ke email.
                 </p>
                     <div class="sosmed flex flex-col md:flex-row mt-6 gap-2 w-1/4 md:w-auto h-auto -ms-0">
@@ -278,13 +304,13 @@
                             <div class="instagram flex items-center gap-3">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                                    <path fill="#1e1e1e" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
                                 </svg>
                             </div>
-                            <div class="desc text-white text-xl">@farrelekaptr</div>
+                            <div class="desc text-gray-800 text-xl">@farrelekaptr</div>
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-2 4v-2h2v2zM4 6H2q0-.825.588-1.412T4 4zm6 16v-2h2v2zm4 0v-2h2v2zM4 20v2q-.825 0-1.412-.587T2 20zm-2-2v-2h2v2zm0-4v-2h2v2zm0-4V8h2v2zm16 10h2q0 .825-.587 1.413T18 22zM13 8h7V4h-7z" />
+                                    <path fill="#1e1e1e" d="M8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-2 4v-2h2v2zM4 6H2q0-.825.588-1.412T4 4zm6 16v-2h2v2zm4 0v-2h2v2zM4 20v2q-.825 0-1.412-.587T2 20zm-2-2v-2h2v2zm0-4v-2h2v2zm0-4V8h2v2zm16 10h2q0 .825-.587 1.413T18 22zM13 8h7V4h-7z" />
                                 </svg>
                             </div>
                             </div>
@@ -293,13 +319,13 @@
                             <div class="discord flex items-center gap-3">
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path fill="#fff" d="M8.52 13.846c-1.04 0-1.888-.945-1.888-2.101s.827-2.102 1.889-2.102c1.05 0 1.91.945 1.889 2.102c0 1.156-.839 2.1-1.89 2.1m6.974 0c-1.04 0-1.89-.945-1.89-2.101s.829-2.102 1.89-2.102c1.05 0 1.91.945 1.89 2.102c0 1.156-.829 2.1-1.89 2.1m-5.369-9.523l-.308-.563l-.634.106a16.4 16.4 0 0 0-4.158 1.28l-.228.105l-.142.21c-2.613 3.853-3.33 7.648-2.975 11.375l.039.407l.33.24a16.9 16.9 0 0 0 5.078 2.543l.79.242L9.03 17.55c1.91.472 4.03.472 5.939 0l1.107 2.717l.79-.242a16.8 16.8 0 0 0 5.08-2.545l.327-.238l.04-.402c.436-4.32-.697-8.083-2.958-11.384l-.142-.208l-.228-.104a16.6 16.6 0 0 0-4.154-1.28l-.618-.103l-.314.542c-.088.15-.177.32-.263.493a16 16 0 0 0-3.263 0c-.085-.17-.17-.333-.248-.474M6.715 16.61c.197.114.405.226.61.328l-.449 1.096a15 15 0 0 1-3.428-1.778c-.225-3.138.413-6.305 2.564-9.57a14.6 14.6 0 0 1 2.824-.913c.06.125.116.248.162.356l.273.643l.692-.101a14.1 14.1 0 0 1 4.09 0l.69.1l.272-.642c.047-.112.102-.234.16-.356c.977.21 1.923.52 2.828.915c1.875 2.82 2.821 5.966 2.546 9.567a15 15 0 0 1-3.43 1.779l-.445-1.095c.206-.102.414-.214.613-.329c.49-.282 1.017-.634 1.353-.97l-1.28-1.28c-.163.164-.523.42-.977.682c-.444.256-.885.463-1.167.556c-2.003.663-4.428.663-6.432 0c-.281-.093-.722-.3-1.166-.556c-.454-.261-.814-.518-.978-.682l-1.28 1.28c.337.336.864.688 1.354.97" />
+                                        <path fill="#1e1e1e" d="M8.52 13.846c-1.04 0-1.888-.945-1.888-2.101s.827-2.102 1.889-2.102c1.05 0 1.91.945 1.889 2.102c0 1.156-.839 2.1-1.89 2.1m6.974 0c-1.04 0-1.89-.945-1.89-2.101s.829-2.102 1.89-2.102c1.05 0 1.91.945 1.89 2.102c0 1.156-.829 2.1-1.89 2.1m-5.369-9.523l-.308-.563l-.634.106a16.4 16.4 0 0 0-4.158 1.28l-.228.105l-.142.21c-2.613 3.853-3.33 7.648-2.975 11.375l.039.407l.33.24a16.9 16.9 0 0 0 5.078 2.543l.79.242L9.03 17.55c1.91.472 4.03.472 5.939 0l1.107 2.717l.79-.242a16.8 16.8 0 0 0 5.08-2.545l.327-.238l.04-.402c.436-4.32-.697-8.083-2.958-11.384l-.142-.208l-.228-.104a16.6 16.6 0 0 0-4.154-1.28l-.618-.103l-.314.542c-.088.15-.177.32-.263.493a16 16 0 0 0-3.263 0c-.085-.17-.17-.333-.248-.474M6.715 16.61c.197.114.405.226.61.328l-.449 1.096a15 15 0 0 1-3.428-1.778c-.225-3.138.413-6.305 2.564-9.57a14.6 14.6 0 0 1 2.824-.913c.06.125.116.248.162.356l.273.643l.692-.101a14.1 14.1 0 0 1 4.09 0l.69.1l.272-.642c.047-.112.102-.234.16-.356c.977.21 1.923.52 2.828.915c1.875 2.82 2.821 5.966 2.546 9.567a15 15 0 0 1-3.43 1.779l-.445-1.095c.206-.102.414-.214.613-.329c.49-.282 1.017-.634 1.353-.97l-1.28-1.28c-.163.164-.523.42-.977.682c-.444.256-.885.463-1.167.556c-2.003.663-4.428.663-6.432 0c-.281-.093-.722-.3-1.166-.556c-.454-.261-.814-.518-.978-.682l-1.28 1.28c.337.336.864.688 1.354.97" />
                                     </svg>
                                 </div>
-                                <div class="desc text-white text-xl">Ryuu4244</div>
+                                <div class="desc text-gray-800 text-xl">Ryuu4244</div>
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path fill="#fff" d="M8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-2 4v-2h2v2zM4 6H2q0-.825.588-1.412T4 4zm6 16v-2h2v2zm4 0v-2h2v2zM4 20v2q-.825 0-1.412-.587T2 20zm-2-2v-2h2v2zm0-4v-2h2v2zm0-4V8h2v2zm16 10h2q0 .825-.587 1.413T18 22zM13 8h7V4h-7z" />
+                                        <path fill="#1e1e1e" d="M8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-2 4v-2h2v2zM4 6H2q0-.825.588-1.412T4 4zm6 16v-2h2v2zm4 0v-2h2v2zM4 20v2q-.825 0-1.412-.587T2 20zm-2-2v-2h2v2zm0-4v-2h2v2zm0-4V8h2v2zm16 10h2q0 .825-.587 1.413T18 22zM13 8h7V4h-7z" />
                                     </svg>
                                 </div>
                             </div>
@@ -310,14 +336,14 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <g fill="none">
                                             <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                                            <path fill="#fff" d="M18 3a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zm0 2H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1M8 10a1 1 0 0 1 .993.883L9 11v5a1 1 0 0 1-1.993.117L7 16v-5a1 1 0 0 1 1-1m3-1a1 1 0 0 1 .984.821a6 6 0 0 1 .623-.313c.667-.285 1.666-.442 2.568-.159c.473.15.948.43 1.3.907c.315.425.485.942.519 1.523L17 12v4a1 1 0 0 1-1.993.117L15 16v-4c0-.33-.08-.484-.132-.555a.55.55 0 0 0-.293-.188c-.348-.11-.849-.052-1.182.09c-.5.214-.958.55-1.27.861L12 12.34V16a1 1 0 0 1-1.993.117L10 16v-6a1 1 0 0 1 1-1M8 7a1 1 0 1 1 0 2a1 1 0 0 1 0-2" />
+                                            <path fill="#1e1e1e" d="M18 3a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zm0 2H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1M8 10a1 1 0 0 1 .993.883L9 11v5a1 1 0 0 1-1.993.117L7 16v-5a1 1 0 0 1 1-1m3-1a1 1 0 0 1 .984.821a6 6 0 0 1 .623-.313c.667-.285 1.666-.442 2.568-.159c.473.15.948.43 1.3.907c.315.425.485.942.519 1.523L17 12v4a1 1 0 0 1-1.993.117L15 16v-4c0-.33-.08-.484-.132-.555a.55.55 0 0 0-.293-.188c-.348-.11-.849-.052-1.182.09c-.5.214-.958.55-1.27.861L12 12.34V16a1 1 0 0 1-1.993.117L10 16v-6a1 1 0 0 1 1-1M8 7a1 1 0 1 1 0 2a1 1 0 0 1 0-2" />
                                         </g>
                                     </svg>
                                 </div>
-                                <div class="desc text-white text-xl">Farrel Ekaputra</div>
+                                <div class="desc text-gray-800 text-xl">Farrel Ekaputra</div>
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path fill="#fff" d="M8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-2 4v-2h2v2zM4 6H2q0-.825.588-1.412T4 4zm6 16v-2h2v2zm4 0v-2h2v2zM4 20v2q-.825 0-1.412-.587T2 20zm-2-2v-2h2v2zm0-4v-2h2v2zm0-4V8h2v2zm16 10h2q0 .825-.587 1.413T18 22zM13 8h7V4h-7z" />
+                                        <path fill="#1e1e1e" d="M8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-2 4v-2h2v2zM4 6H2q0-.825.588-1.412T4 4zm6 16v-2h2v2zm4 0v-2h2v2zM4 20v2q-.825 0-1.412-.587T2 20zm-2-2v-2h2v2zm0-4v-2h2v2zm0-4V8h2v2zm16 10h2q0 .825-.587 1.413T18 22zM13 8h7V4h-7z" />
                                     </svg>
                                 </div>
                             </div>
@@ -333,6 +359,19 @@
 
             toggleButton.addEventListener("click", function () {
             dropdownMenu.classList.toggle("hidden");
+            });
+        });
+        document.getElementById('halamanBlog').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'info',
+            title: 'Fitur ini masih dalam pengembangan, hehe',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true
             });
         });
     </script>
