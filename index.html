@@ -197,7 +197,7 @@
                             Sebagai Front End Developer
                         </p>
                     </a>
-                    <a href="#" class="card flex flex-col p-3 justify-between w-80 h-auto bg-white">
+                    <a href="#" id="webBelumSiap" class="card flex flex-col p-3 justify-between w-80 h-auto bg-white">
                         <img src="gambar/portofolio/separo.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
                         <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
                             Separo : Sistem Peminjaman Ruang Online
@@ -224,7 +224,7 @@
                             Sebagai Front End Developer
                         </p>
                     </a>
-                    <div class="card flex flex-col p-3 justify-between w-80 h-auto bg-white">
+                    <div id="webBelumSiap" class="card flex flex-col p-3 justify-between w-80 h-auto bg-white">
                         <img src="gambar/smarthome/1.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
                         <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
                             SmartHome website
@@ -233,7 +233,7 @@
                             Sebagai Front End Developer
                         </p>
                     </div>
-                    <div class="card flex flex-col p-3 justify-between w-80 h-auto bg-white">
+                    <div id="webBelumSiap class="card flex flex-col p-3 justify-between w-80 h-auto bg-white">
                         <img src="gambar/portofolio/Zakatify.png" alt="" class="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer">
                         <h1 class="name text-blue-700 text-left text-2xl font-bold pt-3">
                             Zakafity:Aplikasi Asistensi Zakat
@@ -369,6 +369,19 @@
             position: 'top-end',
             icon: 'info',
             title: 'Fitur ini masih dalam pengembangan, hehe',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true
+            });
+        });
+        document.getElementById('webBelumSiap').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'info',
+            title: 'Maaf, web ini lagi ada masalah waktu ditampilkan',
             showConfirmButton: false,
             timer: 3000,
             timerProgressBar: true
