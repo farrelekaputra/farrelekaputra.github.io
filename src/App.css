@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-800;
+}
+
+nav{
+    left: 0;
+    padding: 2%;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    transition: .3s;
+    z-index: 999;
+}
+nav .logo{
+    font-size: 1.5rem;
+    color: rgba(17, 25, 56);
+    position: relative;
+    font-weight: 600;
+}
+nav li{
+    display: inline;
+    transition: .3s;
+}
+nav a{
+    color: rgba(17, 25, 56);
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: .3s;
+}
+nav a:hover{
+    color: rgb(2, 127, 255);
+}
+#nav-button{
+    display: none;
+
+}

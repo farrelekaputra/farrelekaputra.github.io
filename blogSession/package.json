@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.23",
     "@heroicons/react": "^2.2.0",
+    "aos": "^2.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
