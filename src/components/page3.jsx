@@ -1,6 +1,6 @@
 import swal from "sweetalert2"
 
-const Page3 = ({Porto,Header2}) => {
+const Page3 = ({Porto,Header1}) => {
     const sweetAlert = (portoId, portoLink) => {
         if (portoId == 'websiteReady')
         {window.open(portoLink);}
@@ -22,7 +22,7 @@ const Page3 = ({Porto,Header2}) => {
         <div className="container2 pt-2 w-full bg-white flex flex-col mx-auto h-auto justify-center items-center" id="page2" style={{marginTop: "-2px"}}>
             <div className="content2 flex mx-auto w-11/12 md:w-10/12 flex-col">
                 <h1 className="font3 text-blue-700 text-left text-5xl font-bold pb-3">
-                    {Header2}
+                    {Header1}
                 </h1>
                 <p className="text text-xl text-gray-800 text-justify">
                     Berikut merupakan beberapa project yang dilakukan dalam tim ataupun individu dalam beberapa waktu kebelakang.
@@ -30,7 +30,7 @@ const Page3 = ({Porto,Header2}) => {
                 <div className="activity flex flex-row justify-around pt-10 flex-wrap gap-y-6">
                     {Porto.map(({portoName, portoImg, portoRole, portoLink, portoId}, index) => 
                     <div key={index} id={portoId} href={portoLink} className="card cursor-pointer flex flex-col p-3 justify-between w-80 h-auto bg-white" onClick={() => sweetAlert(portoId, portoLink)}>
-                        <img src={portoImg} alt={portoName} className="PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer"/>
+                        <img src={portoImg} alt={portoName} className={"PortofolioPics transition-transform duration-200 transform hover:scale-110 cursor-pointer"}/>
                         <h1 className="name text-blue-700 text-left text-2xl font-bold pt-3">
                             {portoName}
                         </h1>

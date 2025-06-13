@@ -8,6 +8,10 @@ import arcaloka from './portofolio/arcaloka.png'
 import separo from './portofolio/separo.png'
 import jtravel from './portofolio/1.png'
 
+import magang from './blogMaterial/magang.jpg'
+import keyboard from './blogMaterial/keebs.jpg'
+import daredevil from './blogMaterial/matt.png'
+
 export{
     updateMe,
     learn,
@@ -17,5 +21,8 @@ export{
     zakat,
     arcaloka,
     separo,
-    jtravel
+    jtravel,
+    magang, 
+    keyboard,
+    daredevil
 }

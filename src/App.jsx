@@ -3,6 +3,7 @@ import Navbar from './components/navbar'
 import Page1 from './components/page1'
 import Page2 from './components/page2'
 import Page3 from './components/page3';
+import Page4 from './components/page4';
 import{
     updateMe,
     learn,
@@ -12,7 +13,10 @@ import{
     zakat,
     arcaloka,
     separo,
-    jtravel
+    jtravel,
+    keyboard,
+    daredevil,
+    magang
 } from './assets'
 
 export default function App(){
@@ -45,7 +49,7 @@ export default function App(){
         ]}
       />
       <Page3
-        Header2 = "Portofolio" 
+        Header1 = "Portofolio" 
         Porto={[
           {
             portoName:"Website Electrical Science Club",
@@ -82,6 +86,31 @@ export default function App(){
             portoLink:"https://farrelekaputra.github.io/jtravel.github.io/",
             portoRole:"Front End Developer"
           }
+        ]}
+      />
+      
+      <Page4 
+        Header2={"MicroBlog"}
+        MicroBlog={[
+          {
+            BlogJudul: "Bahas Daredevil",
+            BlogImg: daredevil,
+            BlogLink:"https://farrelekaputra.github.io/daredevil.html",
+            BlogDeskripsi: "Movie & Series"
+          },
+          {
+            BlogJudul: "Keyboard",
+            BlogLink:"https://farrelekaputra.github.io/keyboard.html",
+            BlogImg: keyboard,
+            BlogDeskripsi: "Boys will be Boys"
+          },
+          {
+            BlogJudul: "Lihat lainnya",
+            BlogLink:"https://farrelekaputra.github.io/blogSession",
+            BlogImg: magang,
+            BlogDeskripsi: "",
+            special: true
+          },
         ]}
       />
     </>
