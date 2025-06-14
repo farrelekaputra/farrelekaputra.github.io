@@ -1,6 +1,6 @@
 import swal from "sweetalert2"
 
-const Page3 = ({Porto,Header1}) => {
+const Porto = ({Porto,Header1}) => {
     const sweetAlert = (portoId, portoLink) => {
         if (portoId == 'websiteReady')
         {window.open(portoLink);}
@@ -49,4 +49,4 @@ const Page3 = ({Porto,Header1}) => {
     )
 }
 
-export default Page3;
+export default Porto;

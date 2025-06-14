@@ -1,4 +1,4 @@
-const Page2 = ({Hobi, Header}) => {
+const Activity = ({Hobi, Header}) => {
     return(
     <div className="page2" id="what-i-do">
         <div className="container2 pt-2 w-full bg-blue-600 flex flex-col mx-auto h-auto justify-center items-center" id="page2" style={{marginTop: "-2px"}}>
@@ -33,4 +33,4 @@ const Page2 = ({Hobi, Header}) => {
     );
 }
 
-export default Page2;
+export default Activity;

@@ -1,10 +1,15 @@
 import {useState} from 'react';
 import { motion } from 'framer-motion';
+import AOS from 'aos';
+import {useEffect} from 'react';
+import 'aos/dist/aos.css';
 
 const WalkingText = () => {
     return(
     <motion.div animate={{ x: ["100%", "-100%"]}} transition={{duration:10, repeat:Infinity, ease:"linear"}} className='walking-text w-1/2 transition-opacity ease-in flex justify-start gap-2 md:gap-8' >
-<div className="html flex gap-1">
+                
+                <div className="walking-text transition-opacity ease-in flex-row flex justify-start w-1/2 gap-2 text-wrap md:gap-8">
+                    <div className="html flex gap-1">
                         <div className="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
                                 <path fill="#2563EB" d="m3 2l1.578 17.824L12 22l7.467-2.175L21 2zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565l-4.246 1.381l-4.281-1.455l-.288-2.932h2.024l.16 1.411l2.4.815l2.346-.763l.297-3.005H7.416l-.562-6.05h10.412z" />
@@ -42,23 +47,27 @@ const WalkingText = () => {
                         </div>
                         <div className="font3 caption text-xl">Illustration</div>
                     </div>
+                </div>
     </motion.div>
     )
 }
 
 
-const Page1 = ({name, profilPics, introduction}) => {
+const HomePage = ({name, profilPics, introduction}) => {
+    useEffect(() => {
+      AOS.init({once: true });
+      AOS.refresh();
+    }, []);
+
     return(
     <div className="page1 h-screen" id='home'>
-        <div className="container w-10/12 pt-24 flex flex-col md:flex-row mx-auto justify-between md:items-center" id="page1">
+        <div className="container w-10/12 pt-24 flex flex-col md:flex-row mx-auto justify-between md:items-center" id="HomePage">
             <div className="profilPics flex justify-center md:justify-start items-center md:w-1/2 z-40 h-auto bg-white">
-                <img src={profilPics} alt="profilPics" className='pics border-8 rounded-full w-4/6 mb-8 md:mb-0 border-blue-700 md:w-80 transition-all duration-200 transform hover:scale-110 hover:origin-center cursor-pointer'/>
+                <img src={profilPics} data-aos="fade-left" data-aos-duration="1000" alt="profilPics" className='pics border-8 rounded-full w-4/6 mb-8 md:mb-0 border-blue-700 md:w-80 transition-all duration-200 transform hover:scale-110 hover:origin-center cursor-pointer'/>
             </div>
-            <div className="aboutMe flex md:w-1/2 flex-col gap-2 flex-wrap">
+            <div data-aos="fade-up" data-aos-duration="500" className="aboutMe flex md:w-1/2 flex-col gap-2 flex-wrap">
                 <h1 className="font3 text-blue-600 text-left text-5xl font-semibold pb-3">Hi, im {name}</h1>
-                <div className="walking-text transition-opacity ease-in flex-wrap flex justify-start w-1/2 gap-2 text-wrap md:gap-8">
-                    <WalkingText />
-                </div>
+                <WalkingText />
                 <p className="text text-xl w-full text-justify md:text-start">
                     {introduction}
                 </p>
@@ -71,4 +80,4 @@ const Page1 = ({name, profilPics, introduction}) => {
     );
 };
 
-export default Page1;
+export default HomePage;

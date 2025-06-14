@@ -1,4 +1,4 @@
-const Page4 = ({MicroBlog, Header2}) => {
+const Microblog = ({MicroBlog, Header2}) => {
     return(
     <div className="Page4" id="what-i-do">
         <div className="container2 pt-2 w-full bg-blue-600 flex flex-col mx-auto h-auto justify-center items-center" id="Page4" style={{marginTop: "-2px"}}>
@@ -33,4 +33,4 @@ const Page4 = ({MicroBlog, Header2}) => {
     );
 }
 
-export default Page4;
+export default Microblog;
