@@ -12,7 +12,7 @@ const Activity = ({Hobi, Header}) => {
                 <div className="activity flex flex-col md:flex-row justify-center gap-10 pt-10">
                 {Hobi.map(({hobiJudul, hobiDeskripsi, hobiImg}, index) => 
                     <div key={index} className="card flex flex-col p-5 justify-center md:w-1/3 gap-4 h-auto ">
-                        <img src={hobiImg} alt={hobiJudul} className="p-4 m-4 rounded-lg bg-white transition-transform w-60 duration-200 transform hover:scale-110 cursor-pointer" />
+                        <img src={hobiImg} alt={hobiJudul} className="p-4 m-4 rounded-lg bg-white transition-transform w-full md:w-60 duration-200 transform md:hover:scale-110 cursor-pointer" />
                         <h1 className="text-white text-left text-2xl font-bold">
                             {hobiJudul}
                         </h1>
