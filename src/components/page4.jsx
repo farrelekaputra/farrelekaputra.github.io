@@ -9,9 +9,9 @@ const Microblog = ({MicroBlog, Header2}) => {
                 <p className="text text-white text-justify text-xl">
                     Karena lumayan banyak waktu ku (nganggur) jadi, nyoba buat bikin micro blog sekalian, coba baca aja kalo iseng hehe.
                 </p>
-                <div className="activity flex flex-row justify-center gap-10 pt-10">
+                <div className="activity flex flex-col md:flex-row justify-center gap-10 pt-10">
                 {MicroBlog.map(({ BlogJudul, BlogDeskripsi, BlogImg, BlogLink, special }, index) => 
-                    <div key={index} href={BlogLink} className="card flex flex-col p-5 justify-center w-1/3 gap-4 h-auto">
+                    <div key={index} href={BlogLink} className="card flex flex-col p-5 justify-center md:w-1/3 gap-4 h-auto">
                         <img src={BlogImg} alt={BlogJudul} className={`PortofolioPics bg-white w-full h-auto transition-transform duration-200 transform cursor-pointer ${special ? "hover:opacity-70 hover:scale-100" : "hover:scale-110"}`} />
                         <h1 className="text-white text-left text-2xl font-bold">
                         {BlogJudul}

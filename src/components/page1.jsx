@@ -60,7 +60,7 @@ const HomePage = ({name, profilPics, introduction}) => {
     }, []);
 
     return(
-    <div className="page1 h-screen" id='home'>
+    <div className="page1 h-auto md:h-screen" id='home'>
         <div className="container w-10/12 pt-24 flex flex-col md:flex-row mx-auto justify-between md:items-center" id="HomePage">
             <div className="profilPics flex justify-center md:justify-start items-center md:w-1/2 z-40 h-auto bg-white">
                 <img src={profilPics} data-aos="fade-left" data-aos-duration="1000" alt="profilPics" className='pics border-8 rounded-full w-4/6 mb-8 md:mb-0 border-blue-700 md:w-80 transition-all duration-200 transform hover:scale-110 hover:origin-center cursor-pointer'/>
