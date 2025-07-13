@@ -1,5 +1,4 @@
 {
-  "homepage": "https://farrelekaputra.github.io/farrelekaputra.github.io",
   "name": "portofolio",
   "private": true,
   "version": "0.0.0",
@@ -8,9 +7,7 @@
     "dev": "vite",
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "aos": "^2.3.4",
