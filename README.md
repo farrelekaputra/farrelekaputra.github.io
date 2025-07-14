@@ -1,4 +1,4 @@
-# 💻 Farrel Ekaputra - Persolan Portfolio
+# 💻 Farrel Ekaputra - Personal Portfolio
 
 My personal portfolio website was built with **React** and **Vite**.
 It showcases my design, development, and creative illustration skills through a modern, responsive, and animated web layout.
