@@ -9,7 +9,7 @@ It showcases my design, development, and creative illustration skills through a 
 🌐 **Source Code** : [Github Repo](https://github.com/farrelekaputra/farrelekaputra.github.io)
 
 
-😶‍🌫️ Features
+## 😶‍🌫️ Features
   Build with [Vite] (https://vitejs.dev) for ultra-fast development 
   UI Styled with [Tailwind] (https://tailwindcss.com)
   Smooth Animations via [Framer Motion] (https://framer.com/motion) and [AOS](https://milchalsnik.github.io/ios/)
@@ -27,7 +27,7 @@ It showcases my design, development, and creative illustration skills through a 
   | SweetAlert2      | Custom alert modals            |
   | Vercel           | Hosting and deployment         |
 
-🗃️ Folder Structure
+## 🗃️ Folder Structure
   src/
   ├── assets/ # Static files (images, icons)
   ├── components/ # Reusable React components
@@ -35,7 +35,7 @@ It showcases my design, development, and creative illustration skills through a 
   ├── App.jsx # Main application component
   └── main.jsx # App entry point
 
-🚀 Getting Started
+## 🚀 Getting Started
   Clone this repo and install dependencies to run it locally.
   [bash terminal]
   git clone https://github.com/farrelekaputra/farrelekaputra.github.io.git
@@ -43,17 +43,17 @@ It showcases my design, development, and creative illustration skills through a 
   npm install
   npm run dev
 
-🚨 To build for production
+## 🚨 To build for production
   npm run dev
 
-🫥 About Me
+## 🫥 About Me
   I'm Farrel Ekaputra, a freelance vector designer, UI/UX designer, and creative visual projects. I am also interested in front-end website development.
   I build clean, responsive, and visually engaging web experiences that blend function and aesthetics.
   
-📲 Contact
+## 📲 Contact
   Email : farrelekaputra1@gmail.com
   LinkedIn : Muhammad Farrel Ekaputra
   Instagram : @farrelekptr
   
-📃 License
+## 📃 License
   This poject is licensed under the MIT License.
