@@ -10,11 +10,11 @@ It showcases my design, development, and creative illustration skills through a 
 
 
 ### 😶‍🌫️ Features
-  Build with [Vite] (https://vitejs.dev) for ultra-fast development 
+  <pre>Build with [Vite] (https://vitejs.dev) for ultra-fast development 
   UI Styled with [Tailwind] (https://tailwindcss.com)
   Smooth Animations via [Framer Motion] (https://framer.com/motion) and [AOS](https://milchalsnik.github.io/ios/)
   Organized component-based structure
-  Contact section with call-to-action
+  Contact section with call-to-action</pre>
 
 ### 👾 Tech Stack
   | Tool/Library     | Purpose                        |
