@@ -10,11 +10,11 @@ It showcases my design, development, and creative illustration skills through a 
 
 
 ### 😶‍🌫️ Features
-  <pre>Build with [Vite] (https://vitejs.dev) for ultra-fast development 
-  UI Styled with [Tailwind] (https://tailwindcss.com)
-  Smooth Animations via [Framer Motion] (https://framer.com/motion) and [AOS](https://milchalsnik.github.io/ios/)
-  Organized component-based structure
-  Contact section with call-to-action</pre>
+  - Build with [Vite] (https://vitejs.dev) for ultra-fast development 
+  - UI Styled with [Tailwind] (https://tailwindcss.com)
+  - Smooth Animations via [Framer Motion] (https://framer.com/motion) and [AOS](https://milchalsnik.github.io/ios/)
+  - Organized component-based structure
+  - Contact section with call-to-action
 
 ### 👾 Tech Stack
   | Tool/Library     | Purpose                        |
@@ -28,12 +28,14 @@ It showcases my design, development, and creative illustration skills through a 
   | Vercel           | Hosting and deployment         |
 
 ### 🗃️ Folder Structure
+  <pre>
   src/
   ├── assets/ # Static files (images, icons)
   ├── components/ # Reusable React components
   ├── pages/ # Page sections (e.g., Home, About, Projects)
   ├── App.jsx # Main application component
   └── main.jsx # App entry point
+  </pre>
 
 ### 🚀 Getting Started
   Clone this repo and install dependencies to run it locally.
