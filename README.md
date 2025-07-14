@@ -3,8 +3,8 @@
 My personal portfolio website was built with **React** and **Vite**.
 It showcases my design, development, and creative illustration skills through a modern, responsive, and animated web layout.
 
-** 🎥 Live Site** : [farrelekaputraa.vercel.app](https://farrelekaputraa.vercel.app)
-** 🌐 Source Code** : [Github Repo](https://github.com/farrelekaputra/farrelekaputra.github.io)
+🎥 **Live Site** : [farrelekaputraa.vercel.app](https://farrelekaputraa.vercel.app)
+🌐 **Source Code** : [Github Repo](https://github.com/farrelekaputra/farrelekaputra.github.io)
 
 😶‍🌫️ Features
   Build with [Vite] (https://vitejs.dev) for ultra-fast development
