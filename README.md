@@ -38,17 +38,17 @@ It showcases my design, development, and creative illustration skills through a 
   </pre>
 
 ### 🚀 Getting Started
-  Clone this repo and install dependencies to run it locally.
-  [bash terminal]
-  - git clone https://github.com/farrelekaputra/farrelekaputra.github.io.git
-  - cd farrelekaputra.github.io
-  - npm install
-  - npm run dev
-  To build for production
-  - npm run dev
-
+  Clone this repo and install dependencies to run it locally. <br>
+  [bash terminal] <br>
+    git clone https://github.com/farrelekaputra/farrelekaputra.github.io.git <br>
+    cd farrelekaputra.github.io <br>
+    npm install <br>
+    npm run dev <br>
+  To build for production <br>
+    npm run dev
+  
 ### 🫥 About Me
-  I'm Farrel Ekaputra, a freelance vector designer, UI/UX designer, and creative visual projects. I am also interested in front-end website development.
+  I'm Farrel Ekaputra, a freelance vector designer, UI/UX designer, and creative visual projects. I am also interested in front-end website development. <br>
   I build clean, responsive, and visually engaging web experiences that blend function and aesthetics.
   
 ### 📲 Contact
