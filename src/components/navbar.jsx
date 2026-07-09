@@ -3,8 +3,8 @@ import Dropdown from './dropdown.jsx'
 
 const Navbar = () => {
     return (
-        <nav className="bg-white fixed py-8 z-50 top-0 shadow-md w-full px-16 flex justify-between mx-auto">
-            <div className="content-center bg-white w-full flex items-center gap-40 md:gap-0 md:justify-between -ms-6 md:ms-0 mx-auto sticky top-0">
+        <nav className="bg-white fixed py-8 rounded-none z-50 top-0 shadow-md w-full px-16 flex justify-between mx-auto">
+            <div className="content-center  bg-white w-full flex items-center gap-40 md:gap-0 md:justify-between -ms-6 md:ms-0 mx-auto sticky top-0">
                 <a href="#" className="w-1/2 md:w-auto flex items-center space-x-3 rtl:space-x-reverse justify-start">
                     <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-700">Farrel Ekaputra</span>
                 </a>

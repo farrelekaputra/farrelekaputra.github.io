@@ -3,11 +3,11 @@ const Sosmed = ({ sosmed, Header3 }) => {
     <section className="page5" id="page5">
       <div className="container2 absolute z-40 pt-2 pb-8 w-full h-auto md:h-1/2 bg-white flex flex-col mx-auto justify-center items-center" id="page2" style={{ marginTop: "-2px" }}>
         <div className="content2 flex flex-col mx-auto w-10/12">
-          <h1 className="font3 text-gray-800 text-left text-5xl font-bold pb-3">
+          <h1 className="font3 text-blue-700 text-left text-5xl font-semibold pb-3">
             {Header3}
           </h1>
           <p className="text text-gray-800 text-justify text-xl">
-            Oke selain itu, aku juga lumayan aktif berselancar di sosial media. Berikut beberapa contoh sosial media yang biasa aku gunakan, dan juga kalo mau kontak bisa langsung isi form yang langsung otomatis ke email.
+            Selain itu, aku juga lumayan aktif berselancar di sosial media. Berikut beberapa contoh sosial media yang biasa aku gunakan, so Lets Connect!
           </p>
           <div className="sosmed flex flex-col md:flex-row mt-6 gap-4 w-full md:w-auto h-auto">
             {sosmed.map(({ sosmedLabel, sosmedIcon, sosmedLink }, index) => (

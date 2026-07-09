@@ -60,12 +60,12 @@ const HomePage = ({name, profilPics, introduction}) => {
     }, []);
 
     return(
-    <div className="page1 h-auto md:h-screen" id='home'>
+    <div className="page1 h-auto md:h-full" id='home'>
         <div className="container w-10/12 pt-24 flex flex-col md:flex-row mx-auto justify-between md:items-center" id="HomePage">
             <div className="profilPics flex justify-center md:justify-start items-center md:w-1/2 z-40 h-auto bg-white">
-                <img src={profilPics} data-aos="fade-left" data-aos-duration="1000" alt="profilPics" className='pics border-8 rounded-full w-4/6 mb-8 md:mb-0 border-blue-700 md:w-80 transition-all duration-200 transform hover:scale-110 hover:origin-center cursor-pointer'/>
+                <img src={profilPics} data-aos="fade-left" data-aos-duration="1000" alt="profilPics" className='pics w-4/6 mb-8 md:mb-0 border-blue-700 md:w-72 transition-all duration-200 transform hover:scale-110 hover:origin-center cursor-pointer'/>
             </div>
-            <div data-aos="fade-up" data-aos-duration="500" className="aboutMe flex md:w-1/2 flex-col gap-2 flex-wrap">
+            <div data-aos="fade-up" data-aos-duration="500" className="aboutMe flex md:w-3/4 flex-col gap-2 flex-wrap">
                 <h1 className="font3 text-blue-600 text-left text-5xl font-semibold pb-3">Hi, im {name}</h1>
                 <WalkingText />
                 <p className="text text-xl w-full text-justify md:text-start">
@@ -73,9 +73,9 @@ const HomePage = ({name, profilPics, introduction}) => {
                 </p>
             </div>
         </div>
-        <div className="wave bottom-0 left-0 z-40 w-full h-auto transform scale-y-[40%] origin-bottom md:-mt-28">
+        {/* <div className="wave bottom-0 left-0 z-40 w-full h-auto transform scale-y-[40%] origin-bottom md:-mt-24">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2563EB" fill-opacity="1" d="M0,64L0,192L36.9,192L36.9,160L73.8,160L73.8,224L110.8,224L110.8,64L147.7,64L147.7,192L184.6,192L184.6,32L221.5,32L221.5,64L258.5,64L258.5,224L295.4,224L295.4,160L332.3,160L332.3,96L369.2,96L369.2,128L406.2,128L406.2,64L443.1,64L443.1,224L480,224L480,256L516.9,256L516.9,224L553.8,224L553.8,64L590.8,64L590.8,160L627.7,160L627.7,256L664.6,256L664.6,32L701.5,32L701.5,96L738.5,96L738.5,64L775.4,64L775.4,288L812.3,288L812.3,32L849.2,32L849.2,160L886.2,160L886.2,224L923.1,224L923.1,32L960,32L960,96L996.9,96L996.9,128L1033.8,128L1033.8,96L1070.8,96L1070.8,192L1107.7,192L1107.7,32L1144.6,32L1144.6,32L1181.5,32L1181.5,256L1218.5,256L1218.5,160L1255.4,160L1255.4,224L1292.3,224L1292.3,160L1329.2,160L1329.2,64L1366.2,64L1366.2,256L1403.1,256L1403.1,192L1440,192L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"></path></svg>
-        </div>
+        </div> */}
     </div> 
     );
 };

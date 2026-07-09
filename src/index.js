@@ -1,18 +1,18 @@
-import updateMe from './assets/updateMe.png'
-import learn from './assets/new.png'
-import programming from './assets//programming.png'
-import room from './assets/room.png'
-import esc from './assets/portofolio/esc.png'
-import zakat from './assets/portofolio/Zakatify.png'
-import arcaloka from './assets/portofolio/arcaloka.png'
-import separo from './assets/portofolio/separo.png'
-import jtravel from './assets/portofolio/1.png'
+import updateMe from './updateMe.png'
+import learn from './new.png'
+import programming from './programming.png'
+import room from './room.png'
+import esc from './portofolio/esc.png'
+import zakat from './portofolio/Zakatify.png'
+import arcaloka from './portofolio/arcaloka.png'
+import separo from './portofolio/separo.png'
+import jtravel from './portofolio/1.png'
 
-import magang from './assets/blogMaterial/magang.jpg'
-import keyboard from './assets/blogMaterial/keebs.jpg'
-import daredevil from './assets/blogMaterial/matt.png'
+import magang from './blogMaterial/magang.jpg'
+import keyboard from './blogMaterial/keebs.jpg'
+import daredevil from './blogMaterial/matt.png'
 
-export{
+export {
     updateMe,
     learn,
     programming,

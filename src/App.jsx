@@ -21,6 +21,8 @@ import{
     magang
 } from './assets'
 
+import shortVideo from './assets/portofolio/shortVideo.png'
+
 export default function App(){
   return (
     <>
@@ -29,7 +31,7 @@ export default function App(){
       <HomePage 
         name={"Farrel"}
         profilPics={updateMe}
-        introduction={"Oke, aku seorang mahasiswa di program studi yang berbau informatika, yang juga mendalami vector ilustration, ui ux design, dan baru terjun ke dunia front end web developer. Selamat datang di website portofolio ku, hope you enjoy guys~"}
+        introduction={"Halo! Aku seorang fresh graduate berlatar belakang Informatika yang punya ketertarikan di dunia visual dan kode. Saat ini aku berfokus mendalami UI/UX Design, Front-end Web Development, dan Ilustrasi Vektor. Selain itu, aku juga sangat menikmati dunia fotografi. Selamat datang di portofolioku, feel free to look around and enjoy my works!"}
       />
 
       <Activity 
@@ -46,9 +48,9 @@ export default function App(){
             hobiDeskripsi: "FYI, pernah juga join organisasi dan jobdesk disini ga jauh-jauh sama desain. Selain hobi juga jadi mau ga mau harus ngerjain jobdesk."
           },
           {
-            hobiJudul: "Nongkrong",
+            hobiJudul: "Fotografi",
             hobiImg: learn,
-            hobiDeskripsi: "Namanya juga orang, kadang pasti juga ngerasa gabut. Sesekali oke lah, nongkrong ngapain? ya ngegame hehe."
+            hobiDeskripsi: "Seperti teks di atas, aku juga hobi dunia fotografi. Hobi ini dimulai pertengahan tahun 2025 ketika aku nyoba beli kamera second dan lanjut sampe sekarang."
           },
         ]}
       />
@@ -87,8 +89,15 @@ export default function App(){
             portoName:"Jtravel",
             portoImg:jtravel,
             portoId:"websiteReady",
-            portoLink:"https://farrelekaputra.github.io/jtravel.github.io/",
+            portoLink:"https://farrelekaputra.vercel.app/jtravel.vercel.app/",
             portoRole:"Front End Developer"
+          },
+          {
+            portoName:"Xiaomi Community ID",
+            portoImg:shortVideo,
+            portoId:"websiteReady",
+            portoLink:"https://www.instagram.com/reel/DUnrTw3Audl/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==",
+            portoRole:"Short Video Content Creator"
           }
         ]}
       />
@@ -99,18 +108,18 @@ export default function App(){
           {
             BlogJudul: "Bahas Daredevil",
             BlogImg: daredevil,
-            BlogLink:"https://farrelekaputra.github.io/daredevil.html",
+            BlogLink:"https://blogpararel.vercel.app/daredevil",
             BlogDeskripsi: "Movie & Series"
           },
           {
             BlogJudul: "Keyboard",
-            BlogLink:"https://farrelekaputra.github.io/keyboard.html",
+            BlogLink:"https://blogpararel.vercel.app/keyboard",
             BlogImg: keyboard,
             BlogDeskripsi: "Boys will be Boys"
           },
           {
             BlogJudul: "Lihat lainnya",
-            BlogLink:"https://farrelekaputra.github.io/blogSession",
+            BlogLink:"https://blogpararel.vercel.app/",
             BlogImg: magang,
             BlogDeskripsi: "",
             special: true
@@ -123,7 +132,7 @@ export default function App(){
         sosmed={[
           {
             sosmedLink:"https://www.linkedin.com/in/muhammad-farrel-ekaputra-213bb3235/",
-            sosmedLabel:"Farrel Ekaputra",
+            sosmedLabel:"Muhammad Farrel Ekaputra",
             sosmedIcon:"M18 3a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zm0 2H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1M8 10a1 1 0 0 1 .993.883L9 11v5a1 1 0 0 1-1.993.117L7 16v-5a1 1 0 0 1 1-1m3-1a1 1 0 0 1 .984.821a6 6 0 0 1 .623-.313c.667-.285 1.666-.442 2.568-.159c.473.15.948.43 1.3.907c.315.425.485.942.519 1.523L17 12v4a1 1 0 0 1-1.993.117L15 16v-4c0-.33-.08-.484-.132-.555a.55.55 0 0 0-.293-.188c-.348-.11-.849-.052-1.182.09c-.5.214-.958.55-1.27.861L12 12.34V16a1 1 0 0 1-1.993.117L10 16v-6a1 1 0 0 1 1-1M8 7a1 1 0 1 1 0 2a1 1 0 0 1 0-2"
           },
           {
