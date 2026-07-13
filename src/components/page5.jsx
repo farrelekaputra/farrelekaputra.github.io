@@ -1,7 +1,7 @@
 const Sosmed = ({ sosmed, Header3 }) => {
   return (
     <section className="page5" id="page5">
-      <div className="container2 absolute z-40 pt-2 pb-8 w-full h-auto md:h-1/2 bg-white flex flex-col mx-auto justify-center items-center" id="page2" style={{ marginTop: "-2px" }}>
+      <div className="container2 absolute z-40 pt-5 md:pt-2 pb-8 w-full h-auto md:h-1/2 bg-white flex flex-col mx-auto justify-center items-center" id="page2" style={{ marginTop: "-2px" }}>
         <div className="content2 flex flex-col mx-auto w-10/12">
           <h1 className="font3 text-blue-700 text-left text-5xl font-semibold pb-3">
             {Header3}

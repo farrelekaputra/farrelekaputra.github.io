@@ -1,7 +1,7 @@
 const Microblog = ({MicroBlog, Header2}) => {
     return(
     <div className="Page4" id="what-i-do">
-        <div className="container2 pt-2 w-full relative flex flex-col mx-auto h-auto justify-center items-center bg-gradient-to-b from-blue-400 via-blue-600 to-blue-600" id="Page4" style={{marginTop: "-2px"}}>
+        <div className="container2 pt-5 md:pt-2 w-full relative flex flex-col mx-auto h-auto justify-center items-center bg-gradient-to-b from-blue-400 via-blue-600 to-blue-600" id="Page4" style={{marginTop: "-2px"}}>
             <div className="garis absolute flex flex-col top-1/2 start-20 z-10 gap-4">
                 <div className="garis-child flex w-80 h-8 rounded-full bg-blue-300/30"></div>
                 <div className="garis-child flex ms-10 w-80 h-8 rounded-full bg-blue-300/30"></div>
@@ -32,9 +32,9 @@ const Microblog = ({MicroBlog, Header2}) => {
                 <p className="text text-white text-justify text-xl">
                     Karena lumayan banyak waktu ku (nganggur) jadi, nyoba buat bikin micro blog sekalian, coba baca aja kalo iseng hehe.
                 </p>
-                <div className="activity flex flex-col md:flex-row justify-center gap-10 pt-10">
+                <div className="activity flex flex-col md:flex-row justify-center gap-8 md:gap-10 pt-10">
                 {MicroBlog.map(({ BlogJudul, BlogDeskripsi, BlogImg, BlogLink, special }, index) => 
-                    <a key={index} href={BlogLink} className="card flex flex-col p-5 justify-center md:w-1/3 gap-4 h-auto" target="_blank">
+                    <a key={index} href={BlogLink} className="card flex flex-col p-0 md:p-5 justify-center w-full md:w-1/3 md:gap-4 gap-3 h-auto" target="_blank">
                         <img src={BlogImg} alt={BlogJudul} className={`PortofolioPics bg-white w-full h-auto transition-transform duration-200 transform cursor-pointer ${special ? "hover:opacity-70 hover:scale-100" : "hover:scale-110"}`} />
                         <h1 className="text-white text-left text-2xl font-bold">
                         {BlogJudul}
