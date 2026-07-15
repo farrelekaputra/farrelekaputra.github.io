@@ -2,7 +2,7 @@ import {useState} from 'react';
 
 const listVertikal = () =>{
     return(
-        <div className='flex flex-col fixed bg-white shadow-md p-3 gap-4'>
+        <div className='flex flex-col end-4 top-20 fixed bg-white shadow-md p-3 gap-4'>
             <a href="#home" className='py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold md:p-0'>Home</a>
             <a href="#what-i-do" className='py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold md:p-0'>What I do</a>
             <a href="#" className='py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold md:p-0'>Portofolio</a>

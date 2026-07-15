@@ -28,7 +28,7 @@ const Activity = ({Hobi, Header}) => {
                         <h1 className="text-gray-800 text-left text-2xl font-semibold">
                             {hobiJudul}
                         </h1>
-                        <p className="caption text-xl font-semibold text-gray-800 text-justify">
+                        <p className="caption text-xl font-semibold text-gray-800 leading-tight text-justify">
                             {hobiDeskripsi}
                         </p>
                     </div>                
