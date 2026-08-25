@@ -21,7 +21,7 @@ import{
     magang
 } from './assets'
 
-import shortVideo from './assets/portofolio/shortVideo.png'
+import shortVideo from './assets/portofolio/shortVideo.webp'
 
 export default function App(){
   return (
@@ -72,7 +72,7 @@ export default function App(){
             portoRole:"UI/UX Designer"
           },
           {
-            portoName:"Separo:Sistem Booking Ruang",
+            portoName:"Sipro: Sistem Peminjaman Ruang Online",
             portoImg:separo,
             portoId:"websiteGaReady",
             portoLink:"",
