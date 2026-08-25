@@ -1,4 +1,4 @@
-import updateMe from './updateMe.png'
+import updateMe from './Farrel-Ekaputra.png'
 import learn from './new.png'
 import programming from './programming.png'
 import room from './room.png'
