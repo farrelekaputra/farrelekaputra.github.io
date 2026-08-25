@@ -25,10 +25,10 @@ const Activity = ({Hobi, Header}) => {
                 {Hobi.map(({hobiJudul, hobiDeskripsi, hobiImg}, index) => 
                     <div key={index} className="card flex flex-col px-4 pb-4 justify-start md:w-1/3 gap-1 shadow-blue-900/20 backdrop-blur-md md:gap-4 h-auto bg-gradient-to-b from-blue-400 to-white/40 border border-2-white/40 backdrop-blur-sm rounded-lg">
                         <img src={hobiImg} alt={hobiJudul} className="flex mx-auto transition-transform w-96 md:w-60" />
-                        <h1 className="text-gray-800 text-left text-2xl font-semibold">
+                        <h1 className="text-white text-left text-2xl font-bold">
                             {hobiJudul}
                         </h1>
-                        <p className="caption text-xl font-semibold text-gray-800 leading-tight text-justify">
+                        <p className="caption text-xl font-semibold text-white leading-tight text-justify">
                             {hobiDeskripsi}
                         </p>
                     </div>                
