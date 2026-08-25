@@ -63,7 +63,7 @@ const HomePage = ({name, profilPics, introduction}) => {
     <div className="page1 h-auto md:h-full" id='home'>
         <div className="container w-10/12 pt-24 flex flex-col md:flex-row mx-auto justify-between md:items-center" id="HomePage">
             <div className="profilPics flex justify-center md:justify-start items-center md:w-1/2 z-40 h-auto bg-white">
-                <img src={profilPics} data-aos="fade-left" data-aos-duration="1000" alt="profilPics" className='pics w-4/6 mb-8 md:mb-0 border-blue-700 md:w-72 transition-all duration-200 transform hover:scale-110 hover:origin-center cursor-pointer'/>
+                <img src={profilPics} data-aos="fade-left" data-aos-duration="1000" alt="Farrel Ekaputra" className='pics w-4/6 mb-8 md:mb-0 border-blue-700 md:w-72 transition-all duration-200 transform hover:scale-110 hover:origin-center cursor-pointer'/>
             </div>
             <div data-aos="fade-up" data-aos-duration="500" className="aboutMe flex md:w-3/4 flex-col gap-2 flex-wrap">
                 <h1 className="font3 text-blue-600 text-left text-5xl font-semibold pb-3">Hi, im {name}</h1>
