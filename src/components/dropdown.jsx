@@ -5,8 +5,8 @@ const listVertikal = () =>{
         <div className='flex flex-col end-4 top-20 fixed bg-white shadow-md p-3 gap-4'>
             <a href="#home" className='py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold md:p-0'>Home</a>
             <a href="#what-i-do" className='py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold md:p-0'>What I do</a>
-            <a href="#" className='py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold md:p-0'>Portofolio</a>
-            <a href="#" className='py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold md:p-0'>Contact Me</a>
+            <a href="#portofolio" className='py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold md:p-0'>Portofolio</a>
+            <a href="#contact" className='py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold md:p-0'>Contact Me</a>
         </div>
     );
 }
@@ -16,8 +16,8 @@ const listHorizontal = () => {
         <div className='hidden md:block flex bg-white p-3 gap-8'>
                     <a href="#home" className='text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold'>Home</a>
                     <a href="#what-i-do" className='text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold'>What I do</a>
-                    <a href="#" className='text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold'>Portofolio</a>
-                    <a href="#" className='text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold'>Contact Me</a>
+                    <a href="#portofolio" className='text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold'>Portofolio</a>
+                    <a href="#contact" className='text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:hover:font-semibold'>Contact Me</a>
                 </div>
     )
 }

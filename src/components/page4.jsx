@@ -1,6 +1,6 @@
 const Microblog = ({MicroBlog, Header2}) => {
     return(
-    <div className="Page4" id="what-i-do">
+    <div className="Page4" id="Blog">
         <div className="container2 pt-5 md:pt-2 w-full relative flex flex-col mx-auto h-auto justify-center items-center bg-gradient-to-b from-blue-400 via-blue-600 to-blue-600" id="Page4" style={{marginTop: "-2px"}}>
             <div className="garis absolute flex flex-col top-1/2 start-20 z-10 gap-4">
                 <div className="garis-child flex w-80 h-8 rounded-full bg-blue-300/30"></div>

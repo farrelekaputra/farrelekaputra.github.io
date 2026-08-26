@@ -18,13 +18,13 @@ const Porto = ({Porto,Header1}) => {
         })}
     }
     return(
-            <section className="page3" id="page3">
+            <section className="page3" id="portofolio">
         <div className="container2 pt-5 md:pt-2 w-full bg-white border-2-white flex flex-col mx-auto h-auto justify-center items-center" id="page2" style={{marginTop: "-2px"}}>
             <div className="content2 flex mx-auto w-11/12 md:w-10/12 flex-col">
                 <h1 className="font3 text-blue-400 text-left text-5xl font-bold pb-3">
                     {Header1}
                 </h1>
-                <p className="text text-xl text-gray-800 text-justify">
+                <p className="text text-xl text-gray-800 text-justify" id="Portofolio">
                     Berikut merupakan beberapa project yang dilakukan dalam tim ataupun individu dalam beberapa waktu kebelakang.
                 </p>
                 <div className="activity flex flex-row justify-around pt-10 flex-wrap gap-y-6">
