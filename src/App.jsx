@@ -1,10 +1,13 @@
 import './App.css';
+import { useEffect } from 'react'
+import {supabase} from './lib/supabase'
 import Navbar from './components/navbar'
 import HomePage from './components/page1'
 import Activity from './components/page2'
 import Porto from './components/page3';
 import Microblog from './components/page4';
 import Sosmed from './components/page5';
+import UmpanBalik from './components/feedback'
 
 import{
     updateMe,
@@ -24,6 +27,24 @@ import{
 import shortVideo from './assets/portofolio/shortVideo.webp'
 
 export default function App(){
+
+  useEffect(() => {
+    async function testConnection() {
+      const { data, error } = await supabase
+        .from('projects')
+        .select('*');
+
+      if (error) {
+        console.error('Supabase error:', error.message);
+        return;
+      }
+
+      console.log('Data dari Supabase:', data);
+    }
+
+    testConnection();
+  }, []);
+
   return (
     <>
       <Navbar/>
@@ -147,6 +168,7 @@ export default function App(){
           }
         ]}
       />
+      <UmpanBalik />
 
     </>
   );
