@@ -51,7 +51,7 @@ const UmpanBalik = () => {
                 </h1>
 
                 <h2 className="py-2">
-                    Kamu ada masukan buat website ini? Sampein aja :3
+                    Kamu ada masukan buat website ini? Atau mau ngontak? Langsung aja :3
                 </h2>
 
                 <form
