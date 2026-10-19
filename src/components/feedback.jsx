@@ -45,13 +45,8 @@ const UmpanBalik = () => {
         <div className="Container-Feedback flex justify-center items-center w-full pb-8 md:pb-16 mb-8 text-gray-800 text-xl">
             <div className="content-feedback flex flex-col w-11/12 md:w-10/12">
                 <div className="h-1 w-full bg-gray-300 rounded-full"></div>
-
-                <h1 className="mt-8 font3 text-blue-700 text-left text-5xl font-semibold pb-3">
-                    Feedback
-                </h1>
-
                 <h2 className="py-2">
-                    Kamu ada masukan buat website ini? Atau mau ngontak? Langsung aja :3
+                    Kamu ada masukan buat website ini? Atau mau ngontak? Bisa langsung diisi aja
                 </h2>
 
                 <form
